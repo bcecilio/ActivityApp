@@ -10,44 +10,58 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var emojifyButton: UIButton!
+    @IBOutlet weak var strikePoseButton: UIButton!
+    @IBOutlet weak var personifyButton: UIButton!
+    @IBOutlet weak var colorSheetButton: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureCollectionView()
+        configureButtons()
     }
     
-    private func configureCollectionView() {
-        collectionView.dataSource = self
-        collectionView.delegate = self
-    }
-
-
-}
-
-extension ViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "activityCell", for: indexPath)
-        cell.backgroundColor = .systemOrange
-        return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let maxSize: CGSize = UIScreen.main.bounds.size
-        let itemWidth: CGFloat = maxSize.width
-        let itemHeight: CGFloat = maxSize.height * 0.40
+    private func configureButtons() {
+        emojifyButton.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        emojifyButton.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        emojifyButton.layer.shadowOpacity = 1.0
+        emojifyButton.layer.shadowRadius = 0.0
+        emojifyButton.layer.masksToBounds = false
+        emojifyButton.layer.cornerRadius = 4.0
         
-        return CGSize(width: itemWidth, height: itemHeight)
+        strikePoseButton.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        strikePoseButton.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        strikePoseButton.layer.shadowOpacity = 1.0
+        strikePoseButton.layer.shadowRadius = 0.0
+        strikePoseButton.layer.masksToBounds = false
+        strikePoseButton.layer.cornerRadius = 4.0
+        
+        personifyButton.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        personifyButton.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        personifyButton.layer.shadowOpacity = 1.0
+        personifyButton.layer.shadowRadius = 0.0
+        personifyButton.layer.masksToBounds = false
+        personifyButton.layer.cornerRadius = 4.0
+        
+        colorSheetButton.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        colorSheetButton.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        colorSheetButton.layer.shadowOpacity = 1.0
+        colorSheetButton.layer.shadowRadius = 0.0
+        colorSheetButton.layer.masksToBounds = false
+        colorSheetButton.layer.cornerRadius = 4.0
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+    @IBAction func emojifyButtonPressed(_ sender: UIButton) {
         
-        return UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+    }
+    @IBAction func strikeButtonPressed(_ sender: UIButton) {
+        
+    }
+    @IBAction func personifyButtonPresser(_ sender: UIButton) {
+        
+    }
+    @IBAction func colorButtonPressed(_ sender: UIButton) {
+        
     }
 }
 
