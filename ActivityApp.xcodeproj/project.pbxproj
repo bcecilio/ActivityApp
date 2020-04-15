@@ -21,6 +21,8 @@
 		B71C66CC24451D730041AEF4 /* JaheedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71C66CB24451D730041AEF4 /* JaheedViewController.swift */; };
 		B71C66CE24451D7A0041AEF4 /* BrendonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71C66CD24451D7A0041AEF4 /* BrendonViewController.swift */; };
 		B73B175924468687003AF8F3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B73B175824468686003AF8F3 /* GoogleService-Info.plist */; };
+		B74DE4FA24477AAA0056296E /* ActivityModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74DE4F824477AAA0056296E /* ActivityModel+CoreDataClass.swift */; };
+		B74DE4FB24477AAA0056296E /* ActivityModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74DE4F924477AAA0056296E /* ActivityModel+CoreDataProperties.swift */; };
 		F6CADF620324B019B2EA37C5 /* Pods_ActivityAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5599C7B92F50DDD661F311C9 /* Pods_ActivityAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,8 @@
 		B71C66CB24451D730041AEF4 /* JaheedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JaheedViewController.swift; sourceTree = "<group>"; };
 		B71C66CD24451D7A0041AEF4 /* BrendonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrendonViewController.swift; sourceTree = "<group>"; };
 		B73B175824468686003AF8F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B74DE4F824477AAA0056296E /* ActivityModel+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ActivityModel+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		B74DE4F924477AAA0056296E /* ActivityModel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ActivityModel+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		C5B5696B15FF66561B999420 /* Pods-ActivityAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivityAppTests.release.xcconfig"; path = "Target Support Files/Pods-ActivityAppTests/Pods-ActivityAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		EE937D0F1FDDBC8B2E0333A4 /* Pods_ActivityApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ActivityApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -105,6 +109,8 @@
 			children = (
 				B71C66A2244506DA0041AEF4 /* AppDelegate.swift */,
 				B71C66A4244506DA0041AEF4 /* SceneDelegate.swift */,
+				B74DE4F824477AAA0056296E /* ActivityModel+CoreDataClass.swift */,
+				B74DE4F924477AAA0056296E /* ActivityModel+CoreDataProperties.swift */,
 				B71C66CF24451D890041AEF4 /* Controllers */,
 				B71C66A8244506DA0041AEF4 /* Main.storyboard */,
 				B71C66AE244506DB0041AEF4 /* Assets.xcassets */,
@@ -328,10 +334,12 @@
 			files = (
 				B71C66A7244506DA0041AEF4 /* ViewController.swift in Sources */,
 				B71C66A3244506DA0041AEF4 /* AppDelegate.swift in Sources */,
+				B74DE4FB24477AAA0056296E /* ActivityModel+CoreDataProperties.swift in Sources */,
 				B71C66AD244506DA0041AEF4 /* ActivityApp.xcdatamodeld in Sources */,
 				B71C66CA24451D690041AEF4 /* EricViewController.swift in Sources */,
 				B71C66A5244506DA0041AEF4 /* SceneDelegate.swift in Sources */,
 				B71C66CE24451D7A0041AEF4 /* BrendonViewController.swift in Sources */,
+				B74DE4FA24477AAA0056296E /* ActivityModel+CoreDataClass.swift in Sources */,
 				B71C66C824451D620041AEF4 /* TanyaViewController.swift in Sources */,
 				B71C66CC24451D730041AEF4 /* JaheedViewController.swift in Sources */,
 			);
