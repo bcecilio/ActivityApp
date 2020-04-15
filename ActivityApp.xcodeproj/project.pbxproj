@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		309DF59124477F820069AFE4 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DF59024477F820069AFE4 /* DatabaseService.swift */; };
 		7F54F274014A98BD0B9C3A56 /* Pods_ActivityApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE937D0F1FDDBC8B2E0333A4 /* Pods_ActivityApp.framework */; };
 		B71C66A3244506DA0041AEF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71C66A2244506DA0041AEF4 /* AppDelegate.swift */; };
 		B71C66A5244506DA0041AEF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71C66A4244506DA0041AEF4 /* SceneDelegate.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		0585746963CDBE0D0D80CE0C /* Pods-ActivityAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivityAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ActivityAppTests/Pods-ActivityAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		309DF59024477F820069AFE4 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
 		3CB5B1845F0319D52B85169A /* Pods-ActivityApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivityApp.debug.xcconfig"; path = "Target Support Files/Pods-ActivityApp/Pods-ActivityApp.debug.xcconfig"; sourceTree = "<group>"; };
 		5599C7B92F50DDD661F311C9 /* Pods_ActivityAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ActivityAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94EA4691007C3BD629658931 /* Pods-ActivityApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivityApp.release.xcconfig"; path = "Target Support Files/Pods-ActivityApp/Pods-ActivityApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -59,7 +61,7 @@
 		B71C66CD24451D7A0041AEF4 /* BrendonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrendonViewController.swift; sourceTree = "<group>"; };
 		B73B175824468686003AF8F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B74DE4F824477AAA0056296E /* ActivityModel+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ActivityModel+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		B74DE4F924477AAA0056296E /* ActivityModel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ActivityModel+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		B74DE4F924477AAA0056296E /* ActivityModel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ActivityModel+CoreDataProperties.swift"; path = "ActivityApp/ActivityModel+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		C5B5696B15FF66561B999420 /* Pods-ActivityAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivityAppTests.release.xcconfig"; path = "Target Support Files/Pods-ActivityAppTests/Pods-ActivityAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		EE937D0F1FDDBC8B2E0333A4 /* Pods_ActivityApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ActivityApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -84,6 +86,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		309DF58E24477F570069AFE4 /* Tanya */ = {
+			isa = PBXGroup;
+			children = (
+				B71C66C724451D620041AEF4 /* TanyaViewController.swift */,
+			);
+			name = Tanya;
+			sourceTree = "<group>";
+		};
+		309DF58F24477F680069AFE4 /* Eric */ = {
+			isa = PBXGroup;
+			children = (
+				B71C66C924451D690041AEF4 /* EricViewController.swift */,
+				309DF59024477F820069AFE4 /* DatabaseService.swift */,
+			);
+			name = Eric;
+			sourceTree = "<group>";
+		};
+		309DF59224477F890069AFE4 /* Jaheed */ = {
+			isa = PBXGroup;
+			children = (
+				B71C66CB24451D730041AEF4 /* JaheedViewController.swift */,
+			);
+			name = Jaheed;
+			sourceTree = "<group>";
+		};
+		309DF59324477F950069AFE4 /* Brendon */ = {
+			isa = PBXGroup;
+			children = (
+				B71C66CD24451D7A0041AEF4 /* BrendonViewController.swift */,
+			);
+			name = Brendon;
+			sourceTree = "<group>";
+		};
+		309DF59424477FAF0069AFE4 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				B74DE4F824477AAA0056296E /* ActivityModel+CoreDataClass.swift */,
+				B74DE4F924477AAA0056296E /* ActivityModel+CoreDataProperties.swift */,
+				B71C66AB244506DA0041AEF4 /* ActivityApp.xcdatamodeld */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		309DF59524477FF00069AFE4 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B71C66A2244506DA0041AEF4 /* AppDelegate.swift */,
+				B71C66A4244506DA0041AEF4 /* SceneDelegate.swift */,
+				B71C66A8244506DA0041AEF4 /* Main.storyboard */,
+				B71C66AE244506DB0041AEF4 /* Assets.xcassets */,
+				B71C66B0244506DB0041AEF4 /* LaunchScreen.storyboard */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		B71C6696244506DA0041AEF4 = {
 			isa = PBXGroup;
 			children = (
@@ -107,16 +164,10 @@
 		B71C66A1244506DA0041AEF4 /* ActivityApp */ = {
 			isa = PBXGroup;
 			children = (
-				B71C66A2244506DA0041AEF4 /* AppDelegate.swift */,
-				B71C66A4244506DA0041AEF4 /* SceneDelegate.swift */,
-				B74DE4F824477AAA0056296E /* ActivityModel+CoreDataClass.swift */,
-				B74DE4F924477AAA0056296E /* ActivityModel+CoreDataProperties.swift */,
+				309DF59524477FF00069AFE4 /* SupportingFiles */,
+				309DF59424477FAF0069AFE4 /* CoreData */,
 				B71C66CF24451D890041AEF4 /* Controllers */,
-				B71C66A8244506DA0041AEF4 /* Main.storyboard */,
-				B71C66AE244506DB0041AEF4 /* Assets.xcassets */,
-				B71C66B0244506DB0041AEF4 /* LaunchScreen.storyboard */,
 				B71C66B3244506DB0041AEF4 /* Info.plist */,
-				B71C66AB244506DA0041AEF4 /* ActivityApp.xcdatamodeld */,
 				B73B175824468686003AF8F3 /* GoogleService-Info.plist */,
 			);
 			path = ActivityApp;
@@ -135,10 +186,10 @@
 			isa = PBXGroup;
 			children = (
 				B71C66A6244506DA0041AEF4 /* ViewController.swift */,
-				B71C66C724451D620041AEF4 /* TanyaViewController.swift */,
-				B71C66C924451D690041AEF4 /* EricViewController.swift */,
-				B71C66CB24451D730041AEF4 /* JaheedViewController.swift */,
-				B71C66CD24451D7A0041AEF4 /* BrendonViewController.swift */,
+				309DF58E24477F570069AFE4 /* Tanya */,
+				309DF58F24477F680069AFE4 /* Eric */,
+				309DF59224477F890069AFE4 /* Jaheed */,
+				309DF59324477F950069AFE4 /* Brendon */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -342,6 +393,7 @@
 				B74DE4FA24477AAA0056296E /* ActivityModel+CoreDataClass.swift in Sources */,
 				B71C66C824451D620041AEF4 /* TanyaViewController.swift in Sources */,
 				B71C66CC24451D730041AEF4 /* JaheedViewController.swift in Sources */,
+				309DF59124477F820069AFE4 /* DatabaseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
