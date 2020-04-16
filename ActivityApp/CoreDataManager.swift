@@ -24,7 +24,7 @@ class CoreDataManager {
   // CRUD - create
   // converting a UIImage to Data
   func createMediaObect(_ imageData: Data, videoURL: URL?) -> ActivityModel {
-    let mediaObject = MediaObject(entity: MediaObject.entity(), insertInto: context)
+    let mediaObject = ActivityModel(entity: ActivityModel.entity(), insertInto: context)
     mediaObject.dateCreated = Date() // current date
     mediaObject.id = UUID().uuidString // unique string
     mediaObject.image = imageData // both video and image objects has an image
@@ -49,7 +49,7 @@ class CoreDataManager {
   // read
   func fetchMediaObjects() -> [ActivityModel] {
     do {
-      mediaObjects = try context.fetch(MediaObject.fetchRequest()) // fetch all the created objects from the MediaObject entity
+      mediaObjects = try context.fetch(ActivityModel.fetchRequest()) // fetch all the created objects from the MediaObject entity
     } catch {
       print("failed to fetch media objects with error: \(error)")
     }
