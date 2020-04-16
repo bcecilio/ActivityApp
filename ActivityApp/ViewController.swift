@@ -51,7 +51,25 @@ class ViewController: UIViewController {
         colorSheetButton.layer.cornerRadius = 4.0
     }
     
-    private func navigateToTayaView() {
+//    private var testActivities = [Activity]() {
+//        didSet {
+//          testLabel.text = testActivities[1].title
+//        }
+//      }
+//      private var db = DatabaseService()
+//      private func dbServiceTest() {
+//        db.loadActivities { (result) in
+//          switch result {
+//          case .failure(let error):
+//            print("Error loading titles: \(error)")
+//          case .success(let activities):
+//            self.testActivities = activities
+//            print("activities loaded")
+//          }
+//        }
+//      }
+//
+    private func navigateToTanyaView() {
         UIViewController.showViewController(storyBoardName:  "TanyaStoryboard", viewControllerId: "TanyaViewController")
     
     }
@@ -65,7 +83,7 @@ class ViewController: UIViewController {
     
     @IBAction func personifyButtonPresser(_ sender: UIButton) {
         
-        navigateToTayaView()
+//        navigateToTanyaView()
         
     }
     
