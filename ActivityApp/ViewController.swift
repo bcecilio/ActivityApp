@@ -51,15 +51,24 @@ class ViewController: UIViewController {
         colorSheetButton.layer.cornerRadius = 4.0
     }
     
+    private func navigateToTayaView() {
+        UIViewController.showViewController(storyBoardName:  "TanyaStoryboard", viewControllerId: "TanyaViewController")
+    
+    }
+    
     @IBAction func emojifyButtonPressed(_ sender: UIButton) {
         
     }
     @IBAction func strikeButtonPressed(_ sender: UIButton) {
         
     }
+    
     @IBAction func personifyButtonPresser(_ sender: UIButton) {
         
+        navigateToTayaView()
+        
     }
+    
     @IBAction func colorButtonPressed(_ sender: UIButton) {
         
     }

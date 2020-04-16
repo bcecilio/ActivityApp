@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EF8664C2447BC7F00C3B1BE /* TanyaStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EF8664B2447BC7F00C3B1BE /* TanyaStoryboard.storyboard */; };
+		2EF8664E24484B0200C3B1BE /* Data+ConvertToUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF8664D24484B0100C3B1BE /* Data+ConvertToUrl.swift */; };
+		2EF8665024484B4E00C3B1BE /* URL+VideoThumbnailPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF8664F24484B4E00C3B1BE /* URL+VideoThumbnailPreview.swift */; };
+		2EF866522448534200C3B1BE /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF866512448534200C3B1BE /* CoreDataManager.swift */; };
+		2EF8665424485AED00C3B1BE /* UIController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF8665324485AED00C3B1BE /* UIController+Navigation.swift */; };
 		309DF59124477F820069AFE4 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DF59024477F820069AFE4 /* DatabaseService.swift */; };
 		7F54F274014A98BD0B9C3A56 /* Pods_ActivityApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE937D0F1FDDBC8B2E0333A4 /* Pods_ActivityApp.framework */; };
 		B71C66A3244506DA0041AEF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71C66A2244506DA0041AEF4 /* AppDelegate.swift */; };
@@ -40,6 +45,11 @@
 
 /* Begin PBXFileReference section */
 		0585746963CDBE0D0D80CE0C /* Pods-ActivityAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivityAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ActivityAppTests/Pods-ActivityAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2EF8664B2447BC7F00C3B1BE /* TanyaStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TanyaStoryboard.storyboard; sourceTree = "<group>"; };
+		2EF8664D24484B0100C3B1BE /* Data+ConvertToUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+ConvertToUrl.swift"; sourceTree = "<group>"; };
+		2EF8664F24484B4E00C3B1BE /* URL+VideoThumbnailPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+VideoThumbnailPreview.swift"; sourceTree = "<group>"; };
+		2EF866512448534200C3B1BE /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		2EF8665324485AED00C3B1BE /* UIController+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIController+Navigation.swift"; sourceTree = "<group>"; };
 		309DF59024477F820069AFE4 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
 		3CB5B1845F0319D52B85169A /* Pods-ActivityApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivityApp.debug.xcconfig"; path = "Target Support Files/Pods-ActivityApp/Pods-ActivityApp.debug.xcconfig"; sourceTree = "<group>"; };
 		5599C7B92F50DDD661F311C9 /* Pods_ActivityAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ActivityAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,7 +101,12 @@
 		309DF58E24477F570069AFE4 /* Tanya */ = {
 			isa = PBXGroup;
 			children = (
+				2EF8665324485AED00C3B1BE /* UIController+Navigation.swift */,
 				B71C66C724451D620041AEF4 /* TanyaViewController.swift */,
+				2EF866512448534200C3B1BE /* CoreDataManager.swift */,
+				2EF8664B2447BC7F00C3B1BE /* TanyaStoryboard.storyboard */,
+				2EF8664D24484B0100C3B1BE /* Data+ConvertToUrl.swift */,
+				2EF8664F24484B4E00C3B1BE /* URL+VideoThumbnailPreview.swift */,
 			);
 			name = Tanya;
 			sourceTree = "<group>";
@@ -312,6 +327,7 @@
 				B71C66B2244506DB0041AEF4 /* LaunchScreen.storyboard in Resources */,
 				B71C66AF244506DB0041AEF4 /* Assets.xcassets in Resources */,
 				B73B175924468687003AF8F3 /* GoogleService-Info.plist in Resources */,
+				2EF8664C2447BC7F00C3B1BE /* TanyaStoryboard.storyboard in Resources */,
 				B71C66AA244506DA0041AEF4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,12 +413,16 @@
 				B74DE500244783BB0056296E /* UIViewController+Navigation.swift in Sources */,
 				B71C66A7244506DA0041AEF4 /* ViewController.swift in Sources */,
 				B71C66A3244506DA0041AEF4 /* AppDelegate.swift in Sources */,
+				2EF866522448534200C3B1BE /* CoreDataManager.swift in Sources */,
 				B74DE4FB24477AAA0056296E /* ActivityModel+CoreDataProperties.swift in Sources */,
+				2EF8665424485AED00C3B1BE /* UIController+Navigation.swift in Sources */,
 				B71C66AD244506DA0041AEF4 /* ActivityApp.xcdatamodeld in Sources */,
+				2EF8665024484B4E00C3B1BE /* URL+VideoThumbnailPreview.swift in Sources */,
 				B71C66CA24451D690041AEF4 /* EricViewController.swift in Sources */,
 				B71C66A5244506DA0041AEF4 /* SceneDelegate.swift in Sources */,
 				B71C66CE24451D7A0041AEF4 /* BrendonViewController.swift in Sources */,
 				B74DE4FA24477AAA0056296E /* ActivityModel+CoreDataClass.swift in Sources */,
+				2EF8664E24484B0200C3B1BE /* Data+ConvertToUrl.swift in Sources */,
 				B71C66C824451D620041AEF4 /* TanyaViewController.swift in Sources */,
 				B71C66CC24451D730041AEF4 /* JaheedViewController.swift in Sources */,
 				309DF59124477F820069AFE4 /* DatabaseService.swift in Sources */,
@@ -610,7 +630,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 879MP5M96B;
 				INFOPLIST_FILE = ActivityAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -633,7 +653,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 879MP5M96B;
 				INFOPLIST_FILE = ActivityAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
