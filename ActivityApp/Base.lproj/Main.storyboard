@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aeJ-q7-05N">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aeJ-q7-05N">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -34,6 +34,9 @@
                                     <constraint firstAttribute="height" constant="100" id="PYc-SJ-Wa5"/>
                                 </constraints>
                                 <state key="normal" image="2"/>
+                                <connections>
+                                    <action selector="strikeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E1D-cN-twt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEC-i1-APa">
                                 <rect key="frame" x="36" y="481" width="100" height="100"/>
@@ -53,6 +56,9 @@
                                     <constraint firstAttribute="height" constant="100" id="DUe-WV-JPS"/>
                                 </constraints>
                                 <state key="normal" image="4"/>
+                                <connections>
+                                    <action selector="colorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k0C-mW-OOP"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your activity!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXZ-5W-8hi">
                                 <rect key="frame" x="36" y="188" width="342" height="31.5"/>
@@ -111,32 +117,68 @@
         <!--Feed-->
         <scene sceneID="KGr-hs-klx">
             <objects>
-                <viewController id="kgu-fz-SoN" customClass="EricViewController" customModule="ActivityApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FeedViewController" id="kgu-fz-SoN" customClass="FeedViewController" customModule="ActivityApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tPu-BS-Beb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="wuY-ni-57I">
-                                <rect key="frame" x="87" y="351" width="240" height="128"/>
-                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lWj-rs-jac">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="activityCell" rowHeight="244" id="L4R-Yn-6Jy" customClass="ActivityCell" customModule="ActivityApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="244"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="L4R-Yn-6Jy" id="ArU-5M-r0e">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="244"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Ge-2m-fjf">
+                                                    <rect key="frame" x="40" y="48" width="334" height="177"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6CB-bi-wQK">
+                                                    <rect key="frame" x="30" y="19" width="354" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="9Ge-2m-fjf" firstAttribute="leading" secondItem="ArU-5M-r0e" secondAttribute="leadingMargin" constant="20" id="106-zb-XNF"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="9Ge-2m-fjf" secondAttribute="bottom" constant="8" id="9GX-xr-pV5"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="6CB-bi-wQK" secondAttribute="trailing" constant="10" id="Afx-W1-zL8"/>
+                                                <constraint firstItem="6CB-bi-wQK" firstAttribute="centerX" secondItem="ArU-5M-r0e" secondAttribute="centerX" id="FSL-Eg-tjm"/>
+                                                <constraint firstItem="6CB-bi-wQK" firstAttribute="top" secondItem="ArU-5M-r0e" secondAttribute="topMargin" constant="8" id="IzC-gi-Ry8"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="9Ge-2m-fjf" secondAttribute="trailing" constant="20" id="Lbj-Le-tRn"/>
+                                                <constraint firstItem="6CB-bi-wQK" firstAttribute="leading" secondItem="ArU-5M-r0e" secondAttribute="leadingMargin" constant="10" id="bBY-mz-Un5"/>
+                                                <constraint firstItem="9Ge-2m-fjf" firstAttribute="top" secondItem="6CB-bi-wQK" secondAttribute="bottom" constant="8" id="vi7-ga-0wJ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="activityImageView" destination="9Ge-2m-fjf" id="wHG-S6-7MK"/>
+                                            <outlet property="titleLabel" destination="6CB-bi-wQK" id="Eco-03-gS3"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="wuY-ni-57I" firstAttribute="leading" secondItem="cQb-hT-oeh" secondAttribute="leading" constant="87" id="Csd-Q2-s87"/>
-                            <constraint firstItem="wuY-ni-57I" firstAttribute="centerX" secondItem="tPu-BS-Beb" secondAttribute="centerX" id="Ua5-f1-oBB"/>
-                            <constraint firstItem="cQb-hT-oeh" firstAttribute="bottom" secondItem="wuY-ni-57I" secondAttribute="bottom" constant="334" id="XmV-TP-9YF"/>
-                            <constraint firstItem="wuY-ni-57I" firstAttribute="top" secondItem="cQb-hT-oeh" secondAttribute="top" constant="307" id="zoT-ZP-oGh"/>
+                            <constraint firstItem="cQb-hT-oeh" firstAttribute="bottom" secondItem="lWj-rs-jac" secondAttribute="bottom" id="Hdn-zU-sC2"/>
+                            <constraint firstItem="cQb-hT-oeh" firstAttribute="trailing" secondItem="lWj-rs-jac" secondAttribute="trailing" id="Sh9-Qo-TtB"/>
+                            <constraint firstItem="lWj-rs-jac" firstAttribute="leading" secondItem="cQb-hT-oeh" secondAttribute="leading" id="UB3-Xx-ZAx"/>
+                            <constraint firstItem="lWj-rs-jac" firstAttribute="top" secondItem="cQb-hT-oeh" secondAttribute="top" id="sn8-Fe-tCA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cQb-hT-oeh"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Feed" selectedImage="square.and.arrow.up" catalog="system" id="jn1-1J-5Ga"/>
                     <connections>
-                        <outlet property="image" destination="wuY-ni-57I" id="R9a-fp-Twg"/>
+                        <outlet property="tableView" destination="lWj-rs-jac" id="NF7-FE-33c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="de6-RL-9Ar" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1016" y="512"/>
+            <point key="canvasLocation" x="1015.9420289855074" y="511.60714285714283"/>
         </scene>
         <!--Activities-->
         <scene sceneID="WU7-HR-eMr">
@@ -163,7 +205,7 @@
         <image name="2" width="218" height="203"/>
         <image name="3" width="215" height="203"/>
         <image name="4" width="216" height="206"/>
-        <image name="pencil.slash" catalog="system" width="64" height="56"/>
-        <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
+        <image name="pencil.slash" catalog="system" width="128" height="113"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
     </resources>
 </document>
