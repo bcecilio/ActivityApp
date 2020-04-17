@@ -10,13 +10,13 @@
         <!--Color Sheet-->
         <scene sceneID="0cw-ma-lPW">
             <objects>
-                <viewController id="R0m-Bn-6gN" customClass="BrendonViewController" customModule="ActivityApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BrendonViewController" id="R0m-Bn-6gN" customClass="BrendonViewController" customModule="ActivityApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qnc-dI-Ia9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UkH-8A-1Ty">
-                                <rect key="frame" x="20" y="261" width="374" height="449"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="UkH-8A-1Ty">
+                                <rect key="frame" x="20" y="261.5" width="374" height="447"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Press the take a photo or choose from your library" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZjO-Eg-SNo">
                                 <rect key="frame" x="20" y="113" width="374" height="49"/>
@@ -37,8 +37,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="colorButtonPressed:" destination="R0m-Bn-6gN" eventType="touchUpInside" id="H0B-j7-vWW"/>
-                                    <segue destination="7Ap-Up-d2S" kind="show" id="frz-Hh-YPB"/>
+                                    <segue destination="7Ap-Up-d2S" kind="show" id="rfu-r5-YYi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -125,7 +124,11 @@
                         <viewLayoutGuide key="safeArea" id="1ld-qY-ZoB"/>
                     </view>
                     <navigationItem key="navigationItem" id="08j-H4-LZS">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="Fmx-b5-m7n"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="Fmx-b5-m7n">
+                            <connections>
+                                <action selector="saveButtonPresser:" destination="7Ap-Up-d2S" id="xl2-1q-SJO"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="selectedImageView" destination="ctg-7y-WDD" id="Z8D-tJ-MnU"/>
@@ -135,10 +138,10 @@
             </objects>
             <point key="canvasLocation" x="1763.7681159420292" y="-14.0625"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Main Nav Controller-->
         <scene sceneID="ES1-IQ-duF">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MnG-jF-cqW" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MainNavController" automaticallyAdjustsScrollViewInsets="NO" id="MnG-jF-cqW" customClass="MainNavController" customModule="ActivityApp" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7dC-N1-5Sf">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

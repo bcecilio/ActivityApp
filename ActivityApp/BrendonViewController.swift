@@ -36,6 +36,11 @@ class BrendonViewController: UIViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let detailVC = segue.destination as? ColorSheetController
+        detailVC?.selectedImage = createGrayScale(image: image!)
+    }
+    
     private func createGrayScale(image: UIImage) -> UIImage {
         // create image rectangle with current image width/height
         let imageRect = CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height)
@@ -55,16 +60,12 @@ class BrendonViewController: UIViewController {
     }
     
     @IBAction func cameraButtonPressed(_ sender: UIBarButtonItem) {
-        
+        let photoVC = ColorSheetController()
+        photoVC.selectedImage = createGrayScale(image: image!)
     }
     
     @IBAction func libraryButtonPresser(_ sender: UIBarButtonItem) {
         imagePickerController.sourceType = .photoLibrary
-        present(imagePickerController, animated: true)
-    }
-    
-    @IBAction func colorButtonPressed(_ sender: UIButton) {
-        imagePickerController.sourceType = .camera
         present(imagePickerController, animated: true)
     }
 }
