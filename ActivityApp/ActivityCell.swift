@@ -10,15 +10,13 @@ import UIKit
 
 class ActivityCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+  @IBOutlet weak var titleLabel: UILabel!
+  @IBOutlet weak var activityImageView: UIImageView!
+  
+  func configureCell(activity: ActivityModel) {
+    titleLabel.text = activity.title ?? "No title"
+    guard let data = activity.image else { return }
+    activityImageView.image = UIImage(data: data)
+  }
+  
 }

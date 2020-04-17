@@ -78,7 +78,11 @@ class ViewController: UIViewController {
         
     }
     @IBAction func strikeButtonPressed(_ sender: UIButton) {
-        
+      let storyboard = UIStoryboard(name: "StrikeAPoseTwice", bundle: nil)
+      guard let vc = storyboard.instantiateViewController(identifier: "EricViewController") as? EricViewController else {
+        fatalError("failed to downcast to Eric View Controller")
+      }
+      navigationController?.present(vc, animated: true, completion: nil)
     }
     
     @IBAction func personifyButtonPresser(_ sender: UIButton) {
