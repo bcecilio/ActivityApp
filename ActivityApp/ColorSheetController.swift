@@ -34,7 +34,7 @@ class ColorSheetController: UIViewController {
     
     @IBAction func saveButtonPresser(_ sender: UIBarButtonItem) {
         let imageData = selectedImage?.jpegData(compressionQuality: 1.0)
-        CoreDataManager.shared.createMediaObect(imageData!, videoURL: nil)
+        CoreDataManager.shared.createMediaObect(imageData!, videoURL: nil, title: "Colorsheet")
         UIViewController.showViewController(storyBoardName: "Main", viewControllerId: "ViewController")
     }
 }

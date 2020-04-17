@@ -98,7 +98,6 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="cameraButton" destination="nNZ-0x-lmy" id="6gY-AW-PW5"/>
                         <outlet property="imageView" destination="I0M-uf-09b" id="Qmg-Zf-lTX"/>
                         <outlet property="instructionlabel" destination="7EB-Tv-28V" id="P5f-Du-UH2"/>
                         <outlet property="photoLibraryButton" destination="YIB-kV-Thu" id="PVS-wu-Apq"/>
@@ -109,37 +108,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BAc-vP-dFZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1005.7971014492755" y="-37.5"/>
-        </scene>
-        <!--Photo View Controller-->
-        <scene sceneID="W5w-wh-M2C">
-            <objects>
-                <viewController storyboardIdentifier="photoVC" id="i64-oM-n0b" customClass="PhotoViewController" customModule="ActivityApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="LYB-B1-93x">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sMO-u6-Utp">
-                                <rect key="frame" x="0.0" y="88" width="414" height="791"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="dMP-VV-wsN"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="pIy-cM-odF">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="2Tj-VD-awf">
-                            <connections>
-                                <action selector="backButtonPressed:" destination="i64-oM-n0b" id="HKG-ON-pEi"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="imageView" destination="sMO-u6-Utp" id="7gw-nu-X1V"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3S1-Dg-odH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2818.840579710145" y="-38.169642857142854"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oMJ-xt-XMf">
@@ -158,64 +126,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9mV-iu-HdF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="95.652173913043484" y="-37.5"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Brq-ac-IJB">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Gpt-Pe-wDm" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="U9I-v9-k6R">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="i64-oM-n0b" kind="relationship" relationship="rootViewController" id="OKw-5j-Heh"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Y9o-rw-ZNt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1908.6956521739132" y="-38.169642857142854"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="gwr-HG-a5b">
-            <objects>
-                <viewController id="ggb-5s-AGD" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="TQM-2G-iiT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Qi-eP-5ht">
-                                <rect key="frame" x="0.0" y="88" width="414" height="675"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="J5p-I5-liI"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="uMh-rT-vko"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kkn-b0-Ei1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1005.7971014492755" y="683.70535714285711"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="KUj-Gk-CQt">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GPb-Tt-xG5" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oct-zz-Kwr">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="ggb-5s-AGD" kind="relationship" relationship="rootViewController" id="78R-dN-UrS"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ggj-8g-MoM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="96" y="684"/>
         </scene>
     </scenes>
     <resources>
