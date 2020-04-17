@@ -81,8 +81,10 @@ class ViewController: UIViewController {
 
     private func navigateToJaheedView() {
         UIViewController.showViewController(storyBoardName:  "Jaheed", viewControllerId: "navigationController")
+    }
     
-
+    private func navigateStrikeAPose() {
+        UIViewController.showViewController(storyBoardName: "StrikeAPoseTwice", viewControllerId: "EricViewController")
     }
     
     @IBAction func emojifyButtonPressed(_ sender: UIButton) {
@@ -91,7 +93,7 @@ class ViewController: UIViewController {
         navigateToJaheedView()
     }
     @IBAction func strikeButtonPressed(_ sender: UIButton) {
-        
+        navigateStrikeAPose()
     }
     
     @IBAction func personifyButtonPresser(_ sender: UIButton) {

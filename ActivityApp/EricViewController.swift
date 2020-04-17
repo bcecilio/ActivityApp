@@ -54,6 +54,11 @@ class EricViewController: UIViewController {
     photographerImageView.image = UIImage(data: data)
     
   }
+    
+    @IBAction func backButtonPressed(_ sender: UIButton) {
+        UIViewController.showViewController(storyBoardName: "Main", viewControllerId: "ViewController")
+    }
+    
 }
 
 extension EricViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {

@@ -60,13 +60,22 @@
                                     <action selector="submitButtonPressed:" destination="mYm-q1-WGh" eventType="touchUpInside" id="Ytb-nE-CMZ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GrK-yx-1ak">
+                                <rect key="frame" x="191" y="749" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="mYm-q1-WGh" eventType="touchUpInside" id="hGd-KH-hyd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="0Lk-Yg-frk" firstAttribute="centerX" secondItem="3Bb-nz-PqV" secondAttribute="centerX" id="0KS-qW-TXn"/>
+                            <constraint firstItem="GrK-yx-1ak" firstAttribute="leading" secondItem="05o-Z0-2m4" secondAttribute="leading" constant="191" id="2hH-T1-Xq8"/>
                             <constraint firstItem="yUU-cs-X9R" firstAttribute="top" secondItem="hs4-JT-SBv" secondAttribute="bottom" constant="15" id="3nL-BX-hTY"/>
                             <constraint firstItem="f1d-eo-MFn" firstAttribute="top" secondItem="Wyr-Es-Tk9" secondAttribute="bottom" constant="50" id="9aQ-w4-2cs"/>
                             <constraint firstItem="05o-Z0-2m4" firstAttribute="trailing" secondItem="Wyr-Es-Tk9" secondAttribute="trailing" constant="20" id="Fva-Mj-XKW"/>
+                            <constraint firstItem="GrK-yx-1ak" firstAttribute="top" secondItem="f1d-eo-MFn" secondAttribute="bottom" constant="8" id="Jaj-GI-qq3"/>
                             <constraint firstItem="Wyr-Es-Tk9" firstAttribute="top" secondItem="0Lk-Yg-frk" secondAttribute="bottom" constant="15" id="W8B-NL-m1a"/>
                             <constraint firstItem="Wyr-Es-Tk9" firstAttribute="leading" secondItem="05o-Z0-2m4" secondAttribute="leading" constant="20" id="Yv8-m1-GcJ"/>
                             <constraint firstItem="yUU-cs-X9R" firstAttribute="centerX" secondItem="3Bb-nz-PqV" secondAttribute="centerX" id="ZyL-UJ-b5i"/>
@@ -74,6 +83,7 @@
                             <constraint firstItem="hs4-JT-SBv" firstAttribute="top" secondItem="05o-Z0-2m4" secondAttribute="top" constant="20" id="enl-Pz-yhj"/>
                             <constraint firstItem="hs4-JT-SBv" firstAttribute="centerX" secondItem="3Bb-nz-PqV" secondAttribute="centerX" id="iRX-ii-S45"/>
                             <constraint firstItem="0Lk-Yg-frk" firstAttribute="top" secondItem="yUU-cs-X9R" secondAttribute="bottom" constant="15" id="kDQ-2g-LbK"/>
+                            <constraint firstItem="05o-Z0-2m4" firstAttribute="trailing" secondItem="GrK-yx-1ak" secondAttribute="trailing" constant="189" id="q7A-db-uh9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="05o-Z0-2m4"/>
                     </view>
