@@ -2,7 +2,7 @@
 //  FeedViewController.swift
 //  ActivityApp
 //
-//  Created by Eric Davenport on 4/17/20.
+//  Created by Brendon Cecilio on 4/17/20.
 //  Copyright © 2020 Brendon Cecilio. All rights reserved.
 //
 
