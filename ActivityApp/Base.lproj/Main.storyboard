@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aeJ-q7-05N">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aeJ-q7-05N">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,7 +21,11 @@
                                     <constraint firstAttribute="width" constant="100" id="3sk-X2-2Ar"/>
                                     <constraint firstAttribute="height" constant="100" id="t5B-Wq-cgC"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" image="1"/>
+                                <connections>
+                                    <action selector="emojifyButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mod-XG-36A"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wvg-7l-D3T">
                                 <rect key="frame" x="273" y="313" width="100" height="100"/>
@@ -38,6 +42,9 @@
                                     <constraint firstAttribute="height" constant="100" id="jYt-Nu-fbE"/>
                                 </constraints>
                                 <state key="normal" image="3"/>
+                                <connections>
+                                    <action selector="personifyButtonPresser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Xz-SQ-axt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7q-2n-SPc">
                                 <rect key="frame" x="273" y="481" width="100" height="100"/>
@@ -78,7 +85,7 @@
                         <outlet property="colorSheetButton" destination="K7q-2n-SPc" id="Uhy-fd-deK"/>
                         <outlet property="emojifyButton" destination="nV2-bd-MNU" id="yio-fJ-9dB"/>
                         <outlet property="personifyButton" destination="aEC-i1-APa" id="Ozt-1A-rxE"/>
-                        <outlet property="strikePoseButton" destination="Wvg-7l-D3T" id="vp3-B3-jIV"/>
+                        <outlet property="strikePoseButton" destination="Wvg-7l-D3T" id="eJ2-Vb-0GU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -88,7 +95,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Naf-sU-9GY">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="aeJ-q7-05N" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" automaticallyAdjustsScrollViewInsets="NO" id="aeJ-q7-05N" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0xx-Qf-2N8">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -107,14 +114,28 @@
         <!--Feed-->
         <scene sceneID="KGr-hs-klx">
             <objects>
-                <viewController id="kgu-fz-SoN" sceneMemberID="viewController">
+                <viewController id="kgu-fz-SoN" customClass="EricViewController" customModule="ActivityApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tPu-BS-Beb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="wuY-ni-57I">
+                                <rect key="frame" x="87" y="351" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wuY-ni-57I" firstAttribute="leading" secondItem="cQb-hT-oeh" secondAttribute="leading" constant="87" id="Csd-Q2-s87"/>
+                            <constraint firstItem="wuY-ni-57I" firstAttribute="centerX" secondItem="tPu-BS-Beb" secondAttribute="centerX" id="Ua5-f1-oBB"/>
+                            <constraint firstItem="cQb-hT-oeh" firstAttribute="bottom" secondItem="wuY-ni-57I" secondAttribute="bottom" constant="334" id="XmV-TP-9YF"/>
+                            <constraint firstItem="wuY-ni-57I" firstAttribute="top" secondItem="cQb-hT-oeh" secondAttribute="top" constant="307" id="zoT-ZP-oGh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="cQb-hT-oeh"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Feed" selectedImage="square.and.arrow.up" catalog="system" id="jn1-1J-5Ga"/>
+                    <connections>
+                        <outlet property="image" destination="wuY-ni-57I" id="R9a-fp-Twg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="de6-RL-9Ar" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -145,7 +166,7 @@
         <image name="2" width="218" height="203"/>
         <image name="3" width="215" height="203"/>
         <image name="4" width="216" height="206"/>
-        <image name="pencil.slash" catalog="system" width="128" height="113"/>
-        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <image name="pencil.slash" catalog="system" width="64" height="56"/>
+        <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
     </resources>
 </document>

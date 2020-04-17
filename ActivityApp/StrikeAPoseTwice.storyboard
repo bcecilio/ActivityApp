@@ -1,7 +1,95 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Eric View Controller-->
+        <scene sceneID="9XA-tO-Xjr">
+            <objects>
+                <viewController storyboardIdentifier="EricViewController" id="mYm-q1-WGh" customClass="EricViewController" customModule="ActivityApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Bb-nz-PqV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hs4-JT-SBv">
+                                <rect key="frame" x="119.5" y="64" width="175" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="QVZ-Yl-MMX"/>
+                                </constraints>
+                                <state key="normal" title="Who's taking your photo?"/>
+                                <connections>
+                                    <action selector="photographerButtonPressed:" destination="mYm-q1-WGh" eventType="touchUpInside" id="q5N-Kx-dYL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Lk-Yg-frk">
+                                <rect key="frame" x="170.5" y="363" width="73" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Yzr-p1-VFe"/>
+                                </constraints>
+                                <state key="normal" title="Panoramic"/>
+                                <connections>
+                                    <action selector="panoramicButtonPressed:" destination="mYm-q1-WGh" eventType="touchUpInside" id="wQy-LN-Pv8"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.fill.on.rectangle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Wyr-Es-Tk9">
+                                <rect key="frame" x="20" y="422" width="374" height="225"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="225" id="mv8-0y-ik2"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="yUU-cs-X9R">
+                                <rect key="frame" x="94.5" y="124" width="225" height="222.5"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="5AA-4f-GHy"/>
+                                    <constraint firstAttribute="height" constant="225" id="dfe-ho-Iy6"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1d-eo-MFn">
+                                <rect key="frame" x="182.5" y="697" width="49" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="LqX-R2-qR7"/>
+                                </constraints>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitButtonPressed:" destination="mYm-q1-WGh" eventType="touchUpInside" id="Ytb-nE-CMZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="0Lk-Yg-frk" firstAttribute="centerX" secondItem="3Bb-nz-PqV" secondAttribute="centerX" id="0KS-qW-TXn"/>
+                            <constraint firstItem="yUU-cs-X9R" firstAttribute="top" secondItem="hs4-JT-SBv" secondAttribute="bottom" constant="15" id="3nL-BX-hTY"/>
+                            <constraint firstItem="f1d-eo-MFn" firstAttribute="top" secondItem="Wyr-Es-Tk9" secondAttribute="bottom" constant="50" id="9aQ-w4-2cs"/>
+                            <constraint firstItem="05o-Z0-2m4" firstAttribute="trailing" secondItem="Wyr-Es-Tk9" secondAttribute="trailing" constant="20" id="Fva-Mj-XKW"/>
+                            <constraint firstItem="Wyr-Es-Tk9" firstAttribute="top" secondItem="0Lk-Yg-frk" secondAttribute="bottom" constant="15" id="W8B-NL-m1a"/>
+                            <constraint firstItem="Wyr-Es-Tk9" firstAttribute="leading" secondItem="05o-Z0-2m4" secondAttribute="leading" constant="20" id="Yv8-m1-GcJ"/>
+                            <constraint firstItem="yUU-cs-X9R" firstAttribute="centerX" secondItem="3Bb-nz-PqV" secondAttribute="centerX" id="ZyL-UJ-b5i"/>
+                            <constraint firstItem="f1d-eo-MFn" firstAttribute="centerX" secondItem="3Bb-nz-PqV" secondAttribute="centerX" id="eKr-3J-Ibl"/>
+                            <constraint firstItem="hs4-JT-SBv" firstAttribute="top" secondItem="05o-Z0-2m4" secondAttribute="top" constant="20" id="enl-Pz-yhj"/>
+                            <constraint firstItem="hs4-JT-SBv" firstAttribute="centerX" secondItem="3Bb-nz-PqV" secondAttribute="centerX" id="iRX-ii-S45"/>
+                            <constraint firstItem="0Lk-Yg-frk" firstAttribute="top" secondItem="yUU-cs-X9R" secondAttribute="bottom" constant="15" id="kDQ-2g-LbK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="05o-Z0-2m4"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xxb-hn-oeH"/>
+                    <connections>
+                        <outlet property="photographerImageView" destination="yUU-cs-X9R" id="8hH-0S-RVB"/>
+                        <outlet property="userImageView" destination="Wyr-Es-Tk9" id="YRS-ih-XC0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NXT-An-7Ws" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1755.072463768116" y="104.46428571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="photo" catalog="system" width="128" height="93"/>
+        <image name="photo.fill.on.rectangle.fill" catalog="system" width="128" height="98"/>
+    </resources>
 </document>

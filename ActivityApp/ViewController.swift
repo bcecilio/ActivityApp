@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     }
     
     private func configureButtons() {
-        emojifyButton.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+         emojifyButton.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
         emojifyButton.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
         emojifyButton.layer.shadowOpacity = 1.0
         emojifyButton.layer.shadowRadius = 0.0
@@ -74,12 +74,20 @@ class ViewController: UIViewController {
     
     }
     
+
     private func navigateToColorSheet() {
         UINavigationController.showViewController(storyBoardName: "ColorSheet", viewControllerId: "MainNavController")
+
+    private func navigateToJaheedView() {
+        UIViewController.showViewController(storyBoardName:  "Jaheed", viewControllerId: "navigationController")
+    
+
     }
     
     @IBAction func emojifyButtonPressed(_ sender: UIButton) {
-        
+//        guard let jaheedVC = UIViewController(nibName: nil, bundle: nil) as? JaheedViewController else{fatalError("failed to segue")}
+//        UINavigationController.pushViewController(jaheedVC)
+        navigateToJaheedView()
     }
     @IBAction func strikeButtonPressed(_ sender: UIButton) {
         
@@ -87,7 +95,8 @@ class ViewController: UIViewController {
     
     @IBAction func personifyButtonPresser(_ sender: UIButton) {
         
-//        navigateToTanyaView()
+        navigateToTanyaView()
+        print("Tanya")
         
     }
     
