@@ -7,11 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E83CE142449540600375A57 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E83CE132449540600375A57 /* InitialView.swift */; };
-		2E83CE162449545400375A57 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E83CE152449545400375A57 /* InitialViewController.swift */; };
 		2E83CE412449967500375A57 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E83CE402449967500375A57 /* PhotoViewController.swift */; };
 		2E83CE492449BD8E00375A57 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E83CE482449BD8E00375A57 /* Extension+UIView.swift */; };
-		2E83CE512449BFA900375A57 /* DrawAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E83CE502449BFA900375A57 /* DrawAnnotationView.swift */; };
 		2EF8664C2447BC7F00C3B1BE /* TanyaStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EF8664B2447BC7F00C3B1BE /* TanyaStoryboard.storyboard */; };
 		2EF8664E24484B0200C3B1BE /* Data+ConvertToUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF8664D24484B0100C3B1BE /* Data+ConvertToUrl.swift */; };
 		2EF8665024484B4E00C3B1BE /* URL+VideoThumbnailPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF8664F24484B4E00C3B1BE /* URL+VideoThumbnailPreview.swift */; };
@@ -23,7 +20,6 @@
 		308EDA0824490F5500C55650 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308EDA0724490F5500C55650 /* Line.swift */; };
 		308EDA0A24490F9C00C55650 /* Jaheed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 308EDA0924490F9C00C55650 /* Jaheed.storyboard */; };
 		309DF59124477F820069AFE4 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DF59024477F820069AFE4 /* DatabaseService.swift */; };
-		582E3281244A064F0052AD1B /* kidGif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 582E3280244A064F0052AD1B /* kidGif.gif */; };
 		7F54F274014A98BD0B9C3A56 /* Pods_ActivityApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE937D0F1FDDBC8B2E0333A4 /* Pods_ActivityApp.framework */; };
 		B71C66A3244506DA0041AEF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71C66A2244506DA0041AEF4 /* AppDelegate.swift */; };
 		B71C66A5244506DA0041AEF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71C66A4244506DA0041AEF4 /* SceneDelegate.swift */; };
@@ -39,9 +35,13 @@
 		B71C66CE24451D7A0041AEF4 /* BrendonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71C66CD24451D7A0041AEF4 /* BrendonViewController.swift */; };
 		B73B175924468687003AF8F3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B73B175824468686003AF8F3 /* GoogleService-Info.plist */; };
 		B74DE500244783BB0056296E /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74DE4FF244783BB0056296E /* UIViewController+Navigation.swift */; };
+		B7C41D2724493078002CE4D1 /* ColorSheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7C41D2624493078002CE4D1 /* ColorSheet.storyboard */; };
+		B7C41D292449503F002CE4D1 /* CanvasColorSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C41D282449503F002CE4D1 /* CanvasColorSheet.swift */; };
+		B7C41D2B24495647002CE4D1 /* ColorSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C41D2A24495647002CE4D1 /* ColorSheetController.swift */; };
 		B7F1D4E3244A095F0054209D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F1D4E2244A095F0054209D /* FeedViewController.swift */; };
 		B7F1D4E5244A09910054209D /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F1D4E4244A09910054209D /* ActivityCell.swift */; };
 		B7F1D4E7244A09A50054209D /* StrikeAPoseTwice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F1D4E6244A09A50054209D /* StrikeAPoseTwice.storyboard */; };
+		B7FFF0BE24495E8800A76235 /* MainNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FFF0BD24495E8800A76235 /* MainNavController.swift */; };
 		F6CADF620324B019B2EA37C5 /* Pods_ActivityAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5599C7B92F50DDD661F311C9 /* Pods_ActivityAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,12 +57,8 @@
 
 /* Begin PBXFileReference section */
 		0585746963CDBE0D0D80CE0C /* Pods-ActivityAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivityAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ActivityAppTests/Pods-ActivityAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		2E83CE132449540600375A57 /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
-		2E83CE152449545400375A57 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
-		2E83CE17244954A800375A57 /* Gif+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gif+Extension.swift"; sourceTree = "<group>"; };
 		2E83CE402449967500375A57 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		2E83CE482449BD8E00375A57 /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
-		2E83CE502449BFA900375A57 /* DrawAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawAnnotationView.swift; sourceTree = "<group>"; };
 		2EF8664B2447BC7F00C3B1BE /* TanyaStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TanyaStoryboard.storyboard; sourceTree = "<group>"; };
 		2EF8664D24484B0100C3B1BE /* Data+ConvertToUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+ConvertToUrl.swift"; sourceTree = "<group>"; };
 		2EF8664F24484B4E00C3B1BE /* URL+VideoThumbnailPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+VideoThumbnailPreview.swift"; sourceTree = "<group>"; };
@@ -77,7 +73,6 @@
 		309DF59024477F820069AFE4 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
 		3CB5B1845F0319D52B85169A /* Pods-ActivityApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivityApp.debug.xcconfig"; path = "Target Support Files/Pods-ActivityApp/Pods-ActivityApp.debug.xcconfig"; sourceTree = "<group>"; };
 		5599C7B92F50DDD661F311C9 /* Pods_ActivityAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ActivityAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		582E3280244A064F0052AD1B /* kidGif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = kidGif.gif; sourceTree = "<group>"; };
 		94EA4691007C3BD629658931 /* Pods-ActivityApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivityApp.release.xcconfig"; path = "Target Support Files/Pods-ActivityApp/Pods-ActivityApp.release.xcconfig"; sourceTree = "<group>"; };
 		B71C669F244506DA0041AEF4 /* ActivityApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActivityApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B71C66A2244506DA0041AEF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,9 +92,13 @@
 		B71C66CD24451D7A0041AEF4 /* BrendonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrendonViewController.swift; sourceTree = "<group>"; };
 		B73B175824468686003AF8F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B74DE4FF244783BB0056296E /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
+		B7C41D2624493078002CE4D1 /* ColorSheet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ColorSheet.storyboard; sourceTree = "<group>"; };
+		B7C41D282449503F002CE4D1 /* CanvasColorSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasColorSheet.swift; sourceTree = "<group>"; };
+		B7C41D2A24495647002CE4D1 /* ColorSheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSheetController.swift; sourceTree = "<group>"; };
 		B7F1D4E2244A095F0054209D /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		B7F1D4E4244A09910054209D /* ActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
 		B7F1D4E6244A09A50054209D /* StrikeAPoseTwice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StrikeAPoseTwice.storyboard; sourceTree = "<group>"; };
+		B7FFF0BD24495E8800A76235 /* MainNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavController.swift; sourceTree = "<group>"; };
 		C5B5696B15FF66561B999420 /* Pods-ActivityAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivityAppTests.release.xcconfig"; path = "Target Support Files/Pods-ActivityAppTests/Pods-ActivityAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		EE937D0F1FDDBC8B2E0333A4 /* Pods_ActivityApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ActivityApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -124,29 +123,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2E83CE12244953DF00375A57 /* InitialView */ = {
-			isa = PBXGroup;
-			children = (
-				2E83CE132449540600375A57 /* InitialView.swift */,
-				2E83CE152449545400375A57 /* InitialViewController.swift */,
-				582E3280244A064F0052AD1B /* kidGif.gif */,
-				2E83CE17244954A800375A57 /* Gif+Extension.swift */,
-			);
-			name = InitialView;
-			sourceTree = "<group>";
-		};
 		309DF58E24477F570069AFE4 /* Tanya */ = {
 			isa = PBXGroup;
 			children = (
 				2EF8665324485AED00C3B1BE /* UIController+Navigation.swift */,
 				B71C66C724451D620041AEF4 /* TanyaViewController.swift */,
 				2E83CE482449BD8E00375A57 /* Extension+UIView.swift */,
-				2E83CE502449BFA900375A57 /* DrawAnnotationView.swift */,
 				2E83CE402449967500375A57 /* PhotoViewController.swift */,
 				2EF8664B2447BC7F00C3B1BE /* TanyaStoryboard.storyboard */,
 				2EF8664D24484B0100C3B1BE /* Data+ConvertToUrl.swift */,
 				2EF8664F24484B4E00C3B1BE /* URL+VideoThumbnailPreview.swift */,
-				2E83CE12244953DF00375A57 /* InitialView */,
 			);
 			name = Tanya;
 			sourceTree = "<group>";
@@ -179,6 +165,10 @@
 			isa = PBXGroup;
 			children = (
 				B71C66CD24451D7A0041AEF4 /* BrendonViewController.swift */,
+				B7C41D2624493078002CE4D1 /* ColorSheet.storyboard */,
+				B7FFF0BD24495E8800A76235 /* MainNavController.swift */,
+				B7C41D2A24495647002CE4D1 /* ColorSheetController.swift */,
+				B7C41D282449503F002CE4D1 /* CanvasColorSheet.swift */,
 			);
 			name = Brendon;
 			sourceTree = "<group>";
@@ -376,8 +366,8 @@
 				B71C66B2244506DB0041AEF4 /* LaunchScreen.storyboard in Resources */,
 				B71C66AF244506DB0041AEF4 /* Assets.xcassets in Resources */,
 				B73B175924468687003AF8F3 /* GoogleService-Info.plist in Resources */,
-				582E3281244A064F0052AD1B /* kidGif.gif in Resources */,
 				2EF8664C2447BC7F00C3B1BE /* TanyaStoryboard.storyboard in Resources */,
+				B7C41D2724493078002CE4D1 /* ColorSheet.storyboard in Resources */,
 				B71C66AA244506DA0041AEF4 /* Main.storyboard in Resources */,
 				308EDA0A24490F9C00C55650 /* Jaheed.storyboard in Resources */,
 			);
@@ -462,8 +452,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EF866612448C9CA00C3B1BE /* ActivityModel+CoreDataClass.swift in Sources */,
+				B7C41D2B24495647002CE4D1 /* ColorSheetController.swift in Sources */,
+				B7C41D292449503F002CE4D1 /* CanvasColorSheet.swift in Sources */,
 				2E83CE492449BD8E00375A57 /* Extension+UIView.swift in Sources */,
-				2E83CE512449BFA900375A57 /* DrawAnnotationView.swift in Sources */,
 				308EDA0624490ED000C55650 /* Canvas.swift in Sources */,
 				B74DE500244783BB0056296E /* UIViewController+Navigation.swift in Sources */,
 				B71C66A7244506DA0041AEF4 /* ViewController.swift in Sources */,
@@ -471,16 +462,15 @@
 				2EF866522448534200C3B1BE /* CoreDataManager.swift in Sources */,
 				2EF8665424485AED00C3B1BE /* UIController+Navigation.swift in Sources */,
 				B71C66AD244506DA0041AEF4 /* ActivityApp.xcdatamodeld in Sources */,
+				B7FFF0BE24495E8800A76235 /* MainNavController.swift in Sources */,
 				2EF8665024484B4E00C3B1BE /* URL+VideoThumbnailPreview.swift in Sources */,
 				B71C66CA24451D690041AEF4 /* EricViewController.swift in Sources */,
 				B71C66A5244506DA0041AEF4 /* SceneDelegate.swift in Sources */,
 				2E83CE412449967500375A57 /* PhotoViewController.swift in Sources */,
-				2E83CE142449540600375A57 /* InitialView.swift in Sources */,
 				2EF866622448C9CA00C3B1BE /* ActivityModel+CoreDataProperties.swift in Sources */,
 				B71C66CE24451D7A0041AEF4 /* BrendonViewController.swift in Sources */,
 				B7F1D4E5244A09910054209D /* ActivityCell.swift in Sources */,
 				2EF8664E24484B0200C3B1BE /* Data+ConvertToUrl.swift in Sources */,
-				2E83CE162449545400375A57 /* InitialViewController.swift in Sources */,
 				B71C66C824451D620041AEF4 /* TanyaViewController.swift in Sources */,
 				308EDA0824490F5500C55650 /* Line.swift in Sources */,
 				B71C66CC24451D730041AEF4 /* JaheedViewController.swift in Sources */,

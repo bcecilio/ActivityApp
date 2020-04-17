@@ -12,10 +12,10 @@ class InitialView: UIView {
 
      public lazy var logoGifImageView: UIImageView = {
          let gifImage =  UIImageView()
-            gifImage.loadGif(name: "kidGif")
+//            gifImage.loadGif(name: "kidGif")
         gifImage.backgroundColor = .systemBackground
             gifImage.contentMode = .scaleAspectFit
-            gifImage.animationDuration = 5.0
+        gifImage.animationDuration = 1.0
         self.layer.shadowColor = UIColor.black.cgColor
         self.layer.shadowRadius = 3.0
         self.layer.shadowOpacity = 2.0

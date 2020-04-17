@@ -13,7 +13,7 @@ class TanyaViewController: UIViewController {
 
     
     @IBOutlet weak var resetButton: UIButton!
-    @IBOutlet weak var cameraButton: UIButton!
+
     
     @IBOutlet weak var photoLibraryButton: UIButton!
     @IBOutlet weak var videoButton: UIButton!
@@ -93,14 +93,14 @@ let captureSession = AVCaptureSession()
     private func hideStuff(){
          instructionlabel.alpha = 0
         instructionlabel.isHidden = true
-        cameraButton.isHidden = true
+       
         resetButton.isHidden = false
         
     }
     
     @IBAction func cameraButtonPressed(_ sender: UIButton) {
         instructionlabel.alpha = 0
-        cameraButton.isHidden = true
+  
         videoButton.isHidden = true
         
         imagePickerController.sourceType = .camera
@@ -123,7 +123,7 @@ let captureSession = AVCaptureSession()
     @IBAction func resetButtonPressed(_ sender: UIButton) {
               instructionlabel.alpha = 1
                instructionlabel.isHidden = false
-               cameraButton.isHidden = false
+              
                resetButton.isHidden = true
     }
     

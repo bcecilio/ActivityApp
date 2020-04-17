@@ -42,7 +42,7 @@ class Canvas: UIView {
         image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         if let img = image, let imageData = img.jpegData(compressionQuality: 1.0) {
-            let newActivity = CoreDataManager.shared.createMediaObect(imageData, videoURL: nil)
+            let newActivity = CoreDataManager.shared.createMediaObect(imageData, videoURL: nil, title: "")
             UIImageWriteToSavedPhotosAlbum(img, nil, nil, nil)
         }
     }
