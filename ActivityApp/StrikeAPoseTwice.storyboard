@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S5L-VQ-zP6">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47P-E3-iUw">
-                                <rect key="frame" x="119.5" y="64" width="175" height="44"/>
+                                <rect key="frame" x="119.5" y="108" width="175" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="pKM-kF-jgs"/>
                                 </constraints>
@@ -26,7 +26,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLl-9w-CAh">
-                                <rect key="frame" x="170.5" y="363" width="73" height="44"/>
+                                <rect key="frame" x="170.5" y="407" width="73" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="JDw-Xr-DSF"/>
                                 </constraints>
@@ -36,14 +36,14 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.fill.on.rectangle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="v08-tj-pRC">
-                                <rect key="frame" x="20" y="422" width="374" height="225"/>
+                                <rect key="frame" x="20" y="466" width="374" height="225"/>
                                 <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="225" id="zFG-hB-bSZ"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="dpw-mB-JhT">
-                                <rect key="frame" x="94.5" y="124" width="225" height="222.5"/>
+                                <rect key="frame" x="94.5" y="168" width="225" height="222.5"/>
                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="225" id="2Jj-DD-gui"/>
@@ -51,7 +51,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivZ-fB-mO6">
-                                <rect key="frame" x="182.5" y="697" width="49" height="44"/>
+                                <rect key="frame" x="182.5" y="741" width="49" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Dnd-MI-gam"/>
                                 </constraints>
@@ -77,13 +77,33 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YdV-wQ-IKV"/>
                     </view>
-                    <navigationItem key="navigationItem" id="tzY-6D-Zlr"/>
+                    <navigationItem key="navigationItem" id="tzY-6D-Zlr">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="x65-0Y-ize"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="photographerImageView" destination="dpw-mB-JhT" id="0uN-DI-edy"/>
                         <outlet property="userImageView" destination="v08-tj-pRC" id="F4R-R4-RaF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6fJ-PG-69k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2610.144927536232" y="-22.098214285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MrC-l5-Ib7">
+            <objects>
+                <navigationController storyboardIdentifier="navigationController" automaticallyAdjustsScrollViewInsets="NO" id="S5L-VQ-zP6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MrQ-aZ-A9k">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0EL-qA-y9W" kind="relationship" relationship="rootViewController" id="Kmd-yL-Tv5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4pt-XA-Zs0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1700.0000000000002" y="-22.098214285714285"/>
         </scene>
