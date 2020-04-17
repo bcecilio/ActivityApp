@@ -10,7 +10,7 @@
         <!--Color Sheet-->
         <scene sceneID="0cw-ma-lPW">
             <objects>
-                <viewController id="R0m-Bn-6gN" sceneMemberID="viewController">
+                <viewController id="R0m-Bn-6gN" customClass="BrendonViewController" customModule="ActivityApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qnc-dI-Ia9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,6 +37,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="colorButtonPressed:" destination="R0m-Bn-6gN" eventType="touchUpInside" id="H0B-j7-vWW"/>
                                     <segue destination="7Ap-Up-d2S" kind="show" id="frz-Hh-YPB"/>
                                 </connections>
                             </button>
@@ -61,8 +62,16 @@
                     </view>
                     <navigationItem key="navigationItem" title="Color Sheet" id="leD-rB-qpD">
                         <rightBarButtonItems>
-                            <barButtonItem image="photo.fill" catalog="system" id="XLO-Z7-WUr"/>
-                            <barButtonItem image="camera.fill" catalog="system" id="ScJ-Lu-xtW"/>
+                            <barButtonItem image="photo.fill" catalog="system" id="XLO-Z7-WUr">
+                                <connections>
+                                    <action selector="libraryButtonPresser:" destination="R0m-Bn-6gN" id="YjY-58-WTn"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="camera.fill" catalog="system" id="ScJ-Lu-xtW">
+                                <connections>
+                                    <action selector="cameraButtonPressed:" destination="R0m-Bn-6gN" id="fu0-nm-Xv9"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                 </viewController>
