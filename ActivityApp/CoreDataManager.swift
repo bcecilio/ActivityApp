@@ -46,6 +46,22 @@ class CoreDataManager {
     return mediaObject
   }
   
+  @discardableResult
+  func createMediaObject(_ imageData: Data?, secondImage: Data?, title: String) -> ActivityModel {
+    let activityObject = ActivityModel(entity: ActivityModel.entity(), insertInto: context)
+    activityObject.dateCreated = Date()
+    activityObject.id = UUID().uuidString
+    activityObject.image = imageData
+    activityObject.video = secondImage
+    
+    do {
+      try context.save()
+    } catch {
+      print("Failed to save created activity: \(error)")
+    }
+    return activityObject
+  }
+  
   // read
   func fetchMediaObjects() -> [ActivityModel] {
     do {
