@@ -11,6 +11,9 @@
 		2E83CE162449545400375A57 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E83CE152449545400375A57 /* InitialViewController.swift */; };
 		2E83CE18244954A800375A57 /* Gif+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E83CE17244954A800375A57 /* Gif+Extension.swift */; };
 		2E83CE1A244956C200375A57 /* kidGif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2E83CE19244956C200375A57 /* kidGif.gif */; };
+		2E83CE412449967500375A57 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E83CE402449967500375A57 /* PhotoViewController.swift */; };
+		2E83CE492449BD8E00375A57 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E83CE482449BD8E00375A57 /* Extension+UIView.swift */; };
+		2E83CE512449BFA900375A57 /* DrawAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E83CE502449BFA900375A57 /* DrawAnnotationView.swift */; };
 		2EF8664C2447BC7F00C3B1BE /* TanyaStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EF8664B2447BC7F00C3B1BE /* TanyaStoryboard.storyboard */; };
 		2EF8664E24484B0200C3B1BE /* Data+ConvertToUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF8664D24484B0100C3B1BE /* Data+ConvertToUrl.swift */; };
 		2EF8665024484B4E00C3B1BE /* URL+VideoThumbnailPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF8664F24484B4E00C3B1BE /* URL+VideoThumbnailPreview.swift */; };
@@ -56,6 +59,9 @@
 		2E83CE152449545400375A57 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		2E83CE17244954A800375A57 /* Gif+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gif+Extension.swift"; sourceTree = "<group>"; };
 		2E83CE19244956C200375A57 /* kidGif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = kidGif.gif; path = ../../kidGif.gif; sourceTree = "<group>"; };
+		2E83CE402449967500375A57 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		2E83CE482449BD8E00375A57 /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
+		2E83CE502449BFA900375A57 /* DrawAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawAnnotationView.swift; sourceTree = "<group>"; };
 		2EF8664B2447BC7F00C3B1BE /* TanyaStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TanyaStoryboard.storyboard; sourceTree = "<group>"; };
 		2EF8664D24484B0100C3B1BE /* Data+ConvertToUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+ConvertToUrl.swift"; sourceTree = "<group>"; };
 		2EF8664F24484B4E00C3B1BE /* URL+VideoThumbnailPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+VideoThumbnailPreview.swift"; sourceTree = "<group>"; };
@@ -128,6 +134,9 @@
 			children = (
 				2EF8665324485AED00C3B1BE /* UIController+Navigation.swift */,
 				B71C66C724451D620041AEF4 /* TanyaViewController.swift */,
+				2E83CE482449BD8E00375A57 /* Extension+UIView.swift */,
+				2E83CE502449BFA900375A57 /* DrawAnnotationView.swift */,
+				2E83CE402449967500375A57 /* PhotoViewController.swift */,
 				2EF8664B2447BC7F00C3B1BE /* TanyaStoryboard.storyboard */,
 				2EF8664D24484B0100C3B1BE /* Data+ConvertToUrl.swift */,
 				2EF8664F24484B4E00C3B1BE /* URL+VideoThumbnailPreview.swift */,
@@ -442,6 +451,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EF866612448C9CA00C3B1BE /* ActivityModel+CoreDataClass.swift in Sources */,
+				2E83CE492449BD8E00375A57 /* Extension+UIView.swift in Sources */,
+				2E83CE512449BFA900375A57 /* DrawAnnotationView.swift in Sources */,
 				308EDA0624490ED000C55650 /* Canvas.swift in Sources */,
 				B74DE500244783BB0056296E /* UIViewController+Navigation.swift in Sources */,
 				B71C66A7244506DA0041AEF4 /* ViewController.swift in Sources */,
@@ -452,6 +463,7 @@
 				2EF8665024484B4E00C3B1BE /* URL+VideoThumbnailPreview.swift in Sources */,
 				B71C66CA24451D690041AEF4 /* EricViewController.swift in Sources */,
 				B71C66A5244506DA0041AEF4 /* SceneDelegate.swift in Sources */,
+				2E83CE412449967500375A57 /* PhotoViewController.swift in Sources */,
 				2E83CE142449540600375A57 /* InitialView.swift in Sources */,
 				2EF866622448C9CA00C3B1BE /* ActivityModel+CoreDataProperties.swift in Sources */,
 				B71C66CE24451D7A0041AEF4 /* BrendonViewController.swift in Sources */,
