@@ -35,7 +35,7 @@
                                 </constraints>
                                 <state key="normal" image="2"/>
                                 <connections>
-                                    <action selector="strikeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w0o-bd-JRW"/>
+                                    <action selector="strikeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4BY-Sb-nva"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEC-i1-APa">
@@ -117,32 +117,57 @@
         <!--Feed-->
         <scene sceneID="KGr-hs-klx">
             <objects>
-                <viewController id="kgu-fz-SoN" customClass="EricViewController" customModule="ActivityApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kgu-fz-SoN" customClass="FeedViewController" customModule="ActivityApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tPu-BS-Beb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="wuY-ni-57I">
-                                <rect key="frame" x="87" y="351" width="240" height="128"/>
-                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YjJ-ya-xSZ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="activityCell" rowHeight="142" id="A9L-l2-21M" customClass="ActivityCell" customModule="ActivityApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="142"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A9L-l2-21M" id="7rz-pa-17D">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="142"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="65c-M0-rdE">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="142"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="65c-M0-rdE" secondAttribute="trailing" id="Dwa-TC-FUA"/>
+                                                <constraint firstItem="65c-M0-rdE" firstAttribute="leading" secondItem="7rz-pa-17D" secondAttribute="leading" id="IWW-yX-cDE"/>
+                                                <constraint firstAttribute="bottom" secondItem="65c-M0-rdE" secondAttribute="bottom" id="LfL-RV-CJB"/>
+                                                <constraint firstItem="65c-M0-rdE" firstAttribute="top" secondItem="7rz-pa-17D" secondAttribute="top" id="xUm-69-mCy"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="activityImageView" destination="65c-M0-rdE" id="tFI-qR-H8O"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="wuY-ni-57I" firstAttribute="leading" secondItem="cQb-hT-oeh" secondAttribute="leading" constant="87" id="Csd-Q2-s87"/>
-                            <constraint firstItem="wuY-ni-57I" firstAttribute="centerX" secondItem="tPu-BS-Beb" secondAttribute="centerX" id="Ua5-f1-oBB"/>
-                            <constraint firstItem="cQb-hT-oeh" firstAttribute="bottom" secondItem="wuY-ni-57I" secondAttribute="bottom" constant="334" id="XmV-TP-9YF"/>
-                            <constraint firstItem="wuY-ni-57I" firstAttribute="top" secondItem="cQb-hT-oeh" secondAttribute="top" constant="307" id="zoT-ZP-oGh"/>
+                            <constraint firstItem="cQb-hT-oeh" firstAttribute="trailing" secondItem="YjJ-ya-xSZ" secondAttribute="trailing" id="YMv-mK-Ys9"/>
+                            <constraint firstItem="YjJ-ya-xSZ" firstAttribute="leading" secondItem="cQb-hT-oeh" secondAttribute="leading" id="f8V-xj-3BH"/>
+                            <constraint firstItem="YjJ-ya-xSZ" firstAttribute="top" secondItem="cQb-hT-oeh" secondAttribute="top" id="m2f-3h-Kb8"/>
+                            <constraint firstItem="cQb-hT-oeh" firstAttribute="bottom" secondItem="YjJ-ya-xSZ" secondAttribute="bottom" id="w8V-Jk-0MO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cQb-hT-oeh"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Feed" selectedImage="square.and.arrow.up" catalog="system" id="jn1-1J-5Ga"/>
                     <connections>
-                        <outlet property="image" destination="wuY-ni-57I" id="R9a-fp-Twg"/>
+                        <outlet property="tableView" destination="YjJ-ya-xSZ" id="ESn-6y-jkV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="de6-RL-9Ar" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1016" y="512"/>
+            <point key="canvasLocation" x="1015.9420289855074" y="511.60714285714283"/>
         </scene>
         <!--Activities-->
         <scene sceneID="WU7-HR-eMr">
