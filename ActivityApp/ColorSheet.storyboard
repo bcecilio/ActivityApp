@@ -74,15 +74,21 @@
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="cameraButton" destination="ScJ-Lu-xtW" id="0B1-ux-dH0"/>
+                        <outlet property="colorButton" destination="ruI-6T-hnz" id="a9N-El-qdq"/>
+                        <outlet property="imageView" destination="UkH-8A-1Ty" id="Qny-kr-TUS"/>
+                        <outlet property="libraryButton" destination="XLO-Z7-WUr" id="S4i-KA-lpI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yTi-Uo-9dK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="879.71014492753625" y="-14.0625"/>
         </scene>
-        <!--View Controller-->
+        <!--Color Sheet Controller-->
         <scene sceneID="q4y-w3-mUv">
             <objects>
-                <viewController id="7Ap-Up-d2S" sceneMemberID="viewController">
+                <viewController id="7Ap-Up-d2S" customClass="ColorSheetController" customModule="ActivityApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bMG-ed-NhD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -93,10 +99,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Go-51-OFz">
                                 <rect key="frame" x="25" y="794" width="37" height="30"/>
                                 <state key="normal" title="Undo"/>
+                                <connections>
+                                    <action selector="undoButtonPressed:" destination="7Ap-Up-d2S" eventType="touchUpInside" id="Hai-mF-XJm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPf-hn-kHK">
                                 <rect key="frame" x="99" y="794" width="36" height="30"/>
                                 <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="clearButtonPressed:" destination="7Ap-Up-d2S" eventType="touchUpInside" id="TtM-FF-m4P"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -115,6 +127,9 @@
                     <navigationItem key="navigationItem" id="08j-H4-LZS">
                         <barButtonItem key="rightBarButtonItem" title="Save" id="Fmx-b5-m7n"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="selectedImageView" destination="ctg-7y-WDD" id="Z8D-tJ-MnU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="imB-nS-Afp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

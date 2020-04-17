@@ -35,6 +35,7 @@
 		B74DE500244783BB0056296E /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74DE4FF244783BB0056296E /* UIViewController+Navigation.swift */; };
 		B7C41D2724493078002CE4D1 /* ColorSheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7C41D2624493078002CE4D1 /* ColorSheet.storyboard */; };
 		B7C41D292449503F002CE4D1 /* CanvasColorSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C41D282449503F002CE4D1 /* CanvasColorSheet.swift */; };
+		B7C41D2B24495647002CE4D1 /* ColorSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C41D2A24495647002CE4D1 /* ColorSheetController.swift */; };
 		F6CADF620324B019B2EA37C5 /* Pods_ActivityAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5599C7B92F50DDD661F311C9 /* Pods_ActivityAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +85,7 @@
 		B74DE4FF244783BB0056296E /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
 		B7C41D2624493078002CE4D1 /* ColorSheet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ColorSheet.storyboard; sourceTree = "<group>"; };
 		B7C41D282449503F002CE4D1 /* CanvasColorSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasColorSheet.swift; sourceTree = "<group>"; };
+		B7C41D2A24495647002CE4D1 /* ColorSheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSheetController.swift; sourceTree = "<group>"; };
 		C5B5696B15FF66561B999420 /* Pods-ActivityAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivityAppTests.release.xcconfig"; path = "Target Support Files/Pods-ActivityAppTests/Pods-ActivityAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		EE937D0F1FDDBC8B2E0333A4 /* Pods_ActivityApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ActivityApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -145,6 +147,7 @@
 			children = (
 				B71C66CD24451D7A0041AEF4 /* BrendonViewController.swift */,
 				B7C41D2624493078002CE4D1 /* ColorSheet.storyboard */,
+				B7C41D2A24495647002CE4D1 /* ColorSheetController.swift */,
 				B7C41D282449503F002CE4D1 /* CanvasColorSheet.swift */,
 			);
 			name = Brendon;
@@ -428,6 +431,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EF866612448C9CA00C3B1BE /* ActivityModel+CoreDataClass.swift in Sources */,
+				B7C41D2B24495647002CE4D1 /* ColorSheetController.swift in Sources */,
 				B7C41D292449503F002CE4D1 /* CanvasColorSheet.swift in Sources */,
 				308EDA0624490ED000C55650 /* Canvas.swift in Sources */,
 				B74DE500244783BB0056296E /* UIViewController+Navigation.swift in Sources */,

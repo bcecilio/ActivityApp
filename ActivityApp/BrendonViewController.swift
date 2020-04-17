@@ -17,14 +17,14 @@ class BrendonViewController: UIViewController {
 
     private var image: UIImage? {
         didSet {
-            
+            imageView.image = createGrayScale(image: image!)
         }
     }
     
     private lazy var imagePickerController: UIImagePickerController = {
         let mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary)
         let pickerController = UIImagePickerController()
-//        pickerController.delegate = self
+        pickerController.delegate = self
         pickerController.mediaTypes = mediaTypes ?? ["kUTTypeImage"]
         return pickerController
     }()
