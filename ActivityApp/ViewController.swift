@@ -74,9 +74,14 @@ class ViewController: UIViewController {
     
     }
     
+
+    private func navigateToColorSheet() {
+        UINavigationController.showViewController(storyBoardName: "ColorSheet", viewControllerId: "MainNavController")
+
     private func navigateToJaheedView() {
         UIViewController.showViewController(storyBoardName:  "Jaheed", viewControllerId: "navigationController")
     
+
     }
     
     @IBAction func emojifyButtonPressed(_ sender: UIButton) {
@@ -96,7 +101,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func colorButtonPressed(_ sender: UIButton) {
-        
+        self.navigateToColorSheet()
     }
 }
 

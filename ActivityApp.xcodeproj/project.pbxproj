@@ -39,9 +39,16 @@
 		B71C66CE24451D7A0041AEF4 /* BrendonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71C66CD24451D7A0041AEF4 /* BrendonViewController.swift */; };
 		B73B175924468687003AF8F3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B73B175824468686003AF8F3 /* GoogleService-Info.plist */; };
 		B74DE500244783BB0056296E /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74DE4FF244783BB0056296E /* UIViewController+Navigation.swift */; };
+
+		B7C41D2724493078002CE4D1 /* ColorSheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7C41D2624493078002CE4D1 /* ColorSheet.storyboard */; };
+		B7C41D292449503F002CE4D1 /* CanvasColorSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C41D282449503F002CE4D1 /* CanvasColorSheet.swift */; };
+		B7C41D2B24495647002CE4D1 /* ColorSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C41D2A24495647002CE4D1 /* ColorSheetController.swift */; };
+		B7FFF0BE24495E8800A76235 /* MainNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FFF0BD24495E8800A76235 /* MainNavController.swift */; };
+
 		B7F1D4E3244A095F0054209D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F1D4E2244A095F0054209D /* FeedViewController.swift */; };
 		B7F1D4E5244A09910054209D /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F1D4E4244A09910054209D /* ActivityCell.swift */; };
 		B7F1D4E7244A09A50054209D /* StrikeAPoseTwice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F1D4E6244A09A50054209D /* StrikeAPoseTwice.storyboard */; };
+
 		F6CADF620324B019B2EA37C5 /* Pods_ActivityAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5599C7B92F50DDD661F311C9 /* Pods_ActivityAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -97,9 +104,16 @@
 		B71C66CD24451D7A0041AEF4 /* BrendonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrendonViewController.swift; sourceTree = "<group>"; };
 		B73B175824468686003AF8F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B74DE4FF244783BB0056296E /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
+
+		B7C41D2624493078002CE4D1 /* ColorSheet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ColorSheet.storyboard; sourceTree = "<group>"; };
+		B7C41D282449503F002CE4D1 /* CanvasColorSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasColorSheet.swift; sourceTree = "<group>"; };
+		B7C41D2A24495647002CE4D1 /* ColorSheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSheetController.swift; sourceTree = "<group>"; };
+		B7FFF0BD24495E8800A76235 /* MainNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavController.swift; sourceTree = "<group>"; };
+
 		B7F1D4E2244A095F0054209D /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		B7F1D4E4244A09910054209D /* ActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
 		B7F1D4E6244A09A50054209D /* StrikeAPoseTwice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StrikeAPoseTwice.storyboard; sourceTree = "<group>"; };
+
 		C5B5696B15FF66561B999420 /* Pods-ActivityAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivityAppTests.release.xcconfig"; path = "Target Support Files/Pods-ActivityAppTests/Pods-ActivityAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		EE937D0F1FDDBC8B2E0333A4 /* Pods_ActivityApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ActivityApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -179,6 +193,10 @@
 			isa = PBXGroup;
 			children = (
 				B71C66CD24451D7A0041AEF4 /* BrendonViewController.swift */,
+				B7C41D2624493078002CE4D1 /* ColorSheet.storyboard */,
+				B7FFF0BD24495E8800A76235 /* MainNavController.swift */,
+				B7C41D2A24495647002CE4D1 /* ColorSheetController.swift */,
+				B7C41D282449503F002CE4D1 /* CanvasColorSheet.swift */,
 			);
 			name = Brendon;
 			sourceTree = "<group>";
@@ -378,6 +396,7 @@
 				B73B175924468687003AF8F3 /* GoogleService-Info.plist in Resources */,
 				582E3281244A064F0052AD1B /* kidGif.gif in Resources */,
 				2EF8664C2447BC7F00C3B1BE /* TanyaStoryboard.storyboard in Resources */,
+				B7C41D2724493078002CE4D1 /* ColorSheet.storyboard in Resources */,
 				B71C66AA244506DA0041AEF4 /* Main.storyboard in Resources */,
 				308EDA0A24490F9C00C55650 /* Jaheed.storyboard in Resources */,
 			);
@@ -462,8 +481,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EF866612448C9CA00C3B1BE /* ActivityModel+CoreDataClass.swift in Sources */,
+
+				B7C41D2B24495647002CE4D1 /* ColorSheetController.swift in Sources */,
+				B7C41D292449503F002CE4D1 /* CanvasColorSheet.swift in Sources */,
+
 				2E83CE492449BD8E00375A57 /* Extension+UIView.swift in Sources */,
 				2E83CE512449BFA900375A57 /* DrawAnnotationView.swift in Sources */,
+
 				308EDA0624490ED000C55650 /* Canvas.swift in Sources */,
 				B74DE500244783BB0056296E /* UIViewController+Navigation.swift in Sources */,
 				B71C66A7244506DA0041AEF4 /* ViewController.swift in Sources */,
@@ -471,6 +495,7 @@
 				2EF866522448534200C3B1BE /* CoreDataManager.swift in Sources */,
 				2EF8665424485AED00C3B1BE /* UIController+Navigation.swift in Sources */,
 				B71C66AD244506DA0041AEF4 /* ActivityApp.xcdatamodeld in Sources */,
+				B7FFF0BE24495E8800A76235 /* MainNavController.swift in Sources */,
 				2EF8665024484B4E00C3B1BE /* URL+VideoThumbnailPreview.swift in Sources */,
 				B71C66CA24451D690041AEF4 /* EricViewController.swift in Sources */,
 				B71C66A5244506DA0041AEF4 /* SceneDelegate.swift in Sources */,
