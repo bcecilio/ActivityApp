@@ -74,6 +74,10 @@ class ViewController: UIViewController {
     
     }
     
+    private func navigateToColorSheet() {
+        UIViewController.showViewController(storyBoardName: "ColorSheet", viewControllerId: "BrendonViewController")
+    }
+    
     @IBAction func emojifyButtonPressed(_ sender: UIButton) {
         
     }
@@ -88,7 +92,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func colorButtonPressed(_ sender: UIButton) {
-        
+        navigateToColorSheet()
     }
 }
 
