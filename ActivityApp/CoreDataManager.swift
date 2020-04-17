@@ -15,7 +15,7 @@ class CoreDataManager {
   private init() {}
   static let shared = CoreDataManager()
   
-  private var mediaObjects = [MediaObject]()
+  private var mediaObjects = [ActivityModel]()
   
   // get instance of the NSManagedObjectContext from the AppDelegate
   private let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
@@ -23,8 +23,8 @@ class CoreDataManager {
   
   // CRUD - create
   // converting a UIImage to Data
-  func createMediaObect(_ imageData: Data, videoURL: URL?) -> MediaObject {
-    let mediaObject = MediaObject(entity: MediaObject.entity(), insertInto: context)
+  func createMediaObect(_ imageData: Data, videoURL: URL?) -> ActivityModel {
+    let mediaObject = ActivityModel(entity: ActivityModel.entity(), insertInto: context)
     mediaObject.dateCreated = Date() // current date
     mediaObject.id = UUID().uuidString // unique string
     mediaObject.image = imageData // both video and image objects has an image
@@ -47,9 +47,9 @@ class CoreDataManager {
   }
   
   // read
-  func fetchMediaObjects() -> [MediaObject] {
+  func fetchMediaObjects() -> [ActivityModel] {
     do {
-      mediaObjects = try context.fetch(MediaObject.fetchRequest()) // fetch all the created objects from the MediaObject entity
+      mediaObjects = try context.fetch(ActivityModel.fetchRequest()) // fetch all the created objects from the MediaObject entity
     } catch {
       print("failed to fetch media objects with error: \(error)")
     }

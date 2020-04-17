@@ -21,7 +21,7 @@ class TanyaViewController: UIViewController {
        return pickerController
      }()
     
-    private var mediaObjects = [MediaObject]() {
+    private var mediaObjects = [ActivityModel]() {
         didSet { // property observer
           
         }
