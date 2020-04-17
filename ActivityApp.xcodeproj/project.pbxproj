@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E83CE142449540600375A57 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E83CE132449540600375A57 /* InitialView.swift */; };
+		2E83CE162449545400375A57 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E83CE152449545400375A57 /* InitialViewController.swift */; };
+		2E83CE18244954A800375A57 /* Gif+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E83CE17244954A800375A57 /* Gif+Extension.swift */; };
+		2E83CE1A244956C200375A57 /* kidGif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2E83CE19244956C200375A57 /* kidGif.gif */; };
 		2EF8664C2447BC7F00C3B1BE /* TanyaStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EF8664B2447BC7F00C3B1BE /* TanyaStoryboard.storyboard */; };
 		2EF8664E24484B0200C3B1BE /* Data+ConvertToUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF8664D24484B0100C3B1BE /* Data+ConvertToUrl.swift */; };
 		2EF8665024484B4E00C3B1BE /* URL+VideoThumbnailPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF8664F24484B4E00C3B1BE /* URL+VideoThumbnailPreview.swift */; };
@@ -48,6 +52,10 @@
 
 /* Begin PBXFileReference section */
 		0585746963CDBE0D0D80CE0C /* Pods-ActivityAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivityAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ActivityAppTests/Pods-ActivityAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2E83CE132449540600375A57 /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
+		2E83CE152449545400375A57 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		2E83CE17244954A800375A57 /* Gif+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gif+Extension.swift"; sourceTree = "<group>"; };
+		2E83CE19244956C200375A57 /* kidGif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = kidGif.gif; path = ../../kidGif.gif; sourceTree = "<group>"; };
 		2EF8664B2447BC7F00C3B1BE /* TanyaStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TanyaStoryboard.storyboard; sourceTree = "<group>"; };
 		2EF8664D24484B0100C3B1BE /* Data+ConvertToUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+ConvertToUrl.swift"; sourceTree = "<group>"; };
 		2EF8664F24484B4E00C3B1BE /* URL+VideoThumbnailPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+VideoThumbnailPreview.swift"; sourceTree = "<group>"; };
@@ -104,6 +112,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E83CE12244953DF00375A57 /* InitialView */ = {
+			isa = PBXGroup;
+			children = (
+				2E83CE132449540600375A57 /* InitialView.swift */,
+				2E83CE152449545400375A57 /* InitialViewController.swift */,
+				2E83CE17244954A800375A57 /* Gif+Extension.swift */,
+				2E83CE19244956C200375A57 /* kidGif.gif */,
+			);
+			name = InitialView;
+			sourceTree = "<group>";
+		};
 		309DF58E24477F570069AFE4 /* Tanya */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +131,7 @@
 				2EF8664B2447BC7F00C3B1BE /* TanyaStoryboard.storyboard */,
 				2EF8664D24484B0100C3B1BE /* Data+ConvertToUrl.swift */,
 				2EF8664F24484B4E00C3B1BE /* URL+VideoThumbnailPreview.swift */,
+				2E83CE12244953DF00375A57 /* InitialView */,
 			);
 			name = Tanya;
 			sourceTree = "<group>";
@@ -338,6 +358,7 @@
 				B73B175924468687003AF8F3 /* GoogleService-Info.plist in Resources */,
 				2EF8664C2447BC7F00C3B1BE /* TanyaStoryboard.storyboard in Resources */,
 				B71C66AA244506DA0041AEF4 /* Main.storyboard in Resources */,
+				2E83CE1A244956C200375A57 /* kidGif.gif in Resources */,
 				308EDA0A24490F9C00C55650 /* Jaheed.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,9 +452,12 @@
 				2EF8665024484B4E00C3B1BE /* URL+VideoThumbnailPreview.swift in Sources */,
 				B71C66CA24451D690041AEF4 /* EricViewController.swift in Sources */,
 				B71C66A5244506DA0041AEF4 /* SceneDelegate.swift in Sources */,
+				2E83CE142449540600375A57 /* InitialView.swift in Sources */,
 				2EF866622448C9CA00C3B1BE /* ActivityModel+CoreDataProperties.swift in Sources */,
 				B71C66CE24451D7A0041AEF4 /* BrendonViewController.swift in Sources */,
+				2E83CE18244954A800375A57 /* Gif+Extension.swift in Sources */,
 				2EF8664E24484B0200C3B1BE /* Data+ConvertToUrl.swift in Sources */,
+				2E83CE162449545400375A57 /* InitialViewController.swift in Sources */,
 				B71C66C824451D620041AEF4 /* TanyaViewController.swift in Sources */,
 				308EDA0824490F5500C55650 /* Line.swift in Sources */,
 				B71C66CC24451D730041AEF4 /* JaheedViewController.swift in Sources */,
