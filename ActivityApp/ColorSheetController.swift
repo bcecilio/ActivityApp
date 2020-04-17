@@ -33,8 +33,20 @@ class ColorSheetController: UIViewController {
     }
     
     @IBAction func saveButtonPresser(_ sender: UIBarButtonItem) {
-        let imageData = selectedImage?.jpegData(compressionQuality: 1.0)
-        CoreDataManager.shared.createMediaObect(imageData!, videoURL: nil, title: "Colorsheet")
-        UIViewController.showViewController(storyBoardName: "Main", viewControllerId: "ViewController")
+        var image : UIImage?
+        let currentLayer = UIApplication.shared.keyWindow!.layer
+        let currentScale = UIScreen.main.scale
+        UIGraphicsBeginImageContextWithOptions(currentLayer.frame.size, false, currentScale);
+        guard let currentContext = UIGraphicsGetCurrentContext() else {return}
+        currentLayer.render(in: currentContext)
+        image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        if let img = image, let imageData = img.jpegData(compressionQuality: 1.0) {
+            let newActivity = CoreDataManager.shared.createMediaObect(imageData, videoURL: nil, title: "")
+            UIImageWriteToSavedPhotosAlbum(img, nil, nil, nil)
+        }
+//        let imageData = selectedImage?.jpegData(compressionQuality: 1.0)
+//        CoreDataManager.shared.createMediaObect(imageData!, videoURL: nil, title: "Colorsheet")
+        UIViewController.showViewController(storyBoardName: "Main", viewControllerId: "TabBarController")
     }
 }
