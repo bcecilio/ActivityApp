@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     }
     
     private func configureButtons() {
-        emojifyButton.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+         emojifyButton.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
         emojifyButton.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
         emojifyButton.layer.shadowOpacity = 1.0
         emojifyButton.layer.shadowRadius = 0.0
@@ -90,7 +90,8 @@ class ViewController: UIViewController {
     
     @IBAction func personifyButtonPresser(_ sender: UIButton) {
         
-//        navigateToTanyaView()
+        navigateToTanyaView()
+        print("Tanya")
         
     }
     

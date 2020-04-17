@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aeJ-q7-05N">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aeJ-q7-05N">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,6 +21,7 @@
                                     <constraint firstAttribute="width" constant="100" id="3sk-X2-2Ar"/>
                                     <constraint firstAttribute="height" constant="100" id="t5B-Wq-cgC"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" image="1"/>
                                 <connections>
                                     <action selector="emojifyButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mod-XG-36A"/>
@@ -41,6 +42,9 @@
                                     <constraint firstAttribute="height" constant="100" id="jYt-Nu-fbE"/>
                                 </constraints>
                                 <state key="normal" image="3"/>
+                                <connections>
+                                    <action selector="personifyButtonPresser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Xz-SQ-axt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7q-2n-SPc">
                                 <rect key="frame" x="273" y="481" width="100" height="100"/>
@@ -88,7 +92,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Naf-sU-9GY">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="aeJ-q7-05N" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" automaticallyAdjustsScrollViewInsets="NO" id="aeJ-q7-05N" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0xx-Qf-2N8">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -159,7 +163,7 @@
         <image name="2" width="218" height="203"/>
         <image name="3" width="215" height="203"/>
         <image name="4" width="216" height="206"/>
-        <image name="pencil.slash" catalog="system" width="128" height="113"/>
-        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <image name="pencil.slash" catalog="system" width="64" height="56"/>
+        <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
     </resources>
 </document>

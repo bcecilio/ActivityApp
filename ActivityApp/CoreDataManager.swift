@@ -23,7 +23,7 @@ class CoreDataManager {
   
   // CRUD - create
   // converting a UIImage to Data
-  func createMediaObect(_ imageData: Data, videoURL: URL?) -> ActivityModel {
+    func createMediaObect(_ imageData: Data, videoURL: URL?, title: String?) -> ActivityModel {
     let mediaObject = ActivityModel(entity: ActivityModel.entity(), insertInto: context)
     mediaObject.dateCreated = Date() // current date
     mediaObject.id = UUID().uuidString // unique string
@@ -44,6 +44,22 @@ class CoreDataManager {
       print("failed to save newly created media object with error: \(error)")
     }
     return mediaObject
+  }
+  
+  @discardableResult
+  func createMediaObject(_ imageData: Data?, secondImage: Data?, title: String) -> ActivityModel {
+    let activityObject = ActivityModel(entity: ActivityModel.entity(), insertInto: context)
+    activityObject.dateCreated = Date()
+    activityObject.id = UUID().uuidString
+    activityObject.image = imageData
+    activityObject.video = secondImage
+    
+    do {
+      try context.save()
+    } catch {
+      print("Failed to save created activity: \(error)")
+    }
+    return activityObject
   }
   
   // read
