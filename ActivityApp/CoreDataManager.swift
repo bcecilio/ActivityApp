@@ -23,7 +23,7 @@ class CoreDataManager {
   
   // CRUD - create
   // converting a UIImage to Data
-  func createMediaObect(_ imageData: Data, videoURL: URL?) -> ActivityModel {
+    func createMediaObect(_ imageData: Data, videoURL: URL?, title: String?) -> ActivityModel {
     let mediaObject = ActivityModel(entity: ActivityModel.entity(), insertInto: context)
     mediaObject.dateCreated = Date() // current date
     mediaObject.id = UUID().uuidString // unique string
