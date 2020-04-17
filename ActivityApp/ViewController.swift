@@ -74,8 +74,15 @@ class ViewController: UIViewController {
     
     }
     
+    private func navigateToJaheedView() {
+        UIViewController.showViewController(storyBoardName:  "Jaheed", viewControllerId: "navigationController")
+    
+    }
+    
     @IBAction func emojifyButtonPressed(_ sender: UIButton) {
-        
+//        guard let jaheedVC = UIViewController(nibName: nil, bundle: nil) as? JaheedViewController else{fatalError("failed to segue")}
+//        UINavigationController.pushViewController(jaheedVC)
+        navigateToJaheedView()
     }
     @IBAction func strikeButtonPressed(_ sender: UIButton) {
         

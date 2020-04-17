@@ -10,17 +10,36 @@
         <!--Jaheed View Controller-->
         <scene sceneID="Zy4-8y-CwC">
             <objects>
-                <viewController id="UqV-dk-3AV" customClass="JaheedViewController" customModule="ActivityApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JaheedViewController" id="UqV-dk-3AV" customClass="JaheedViewController" customModule="ActivityApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aY0-2g-hy3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="unU-an-bu7"/>
                     </view>
+                    <navigationItem key="navigationItem" id="GYk-pj-b5q"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DfE-hZ-VPp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="119" y="115"/>
+            <point key="canvasLocation" x="1028.985507246377" y="114.50892857142857"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GC6-cp-F6Y">
+            <objects>
+                <navigationController storyboardIdentifier="navigationController" automaticallyAdjustsScrollViewInsets="NO" id="BAm-9k-fVV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kYi-Xs-n0b">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UqV-dk-3AV" kind="relationship" relationship="rootViewController" id="3dQ-ad-TFa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9k6-Cu-GZq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118.84057971014494" y="114.50892857142857"/>
         </scene>
     </scenes>
 </document>

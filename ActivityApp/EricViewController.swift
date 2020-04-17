@@ -9,6 +9,7 @@
 import UIKit
 
 class EricViewController: UIViewController {
+
   
   @IBOutlet weak var photographerImageView: UIImageView!
   @IBOutlet weak var userImageView: UIImageView!
@@ -26,6 +27,7 @@ class EricViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+
     
     
   }

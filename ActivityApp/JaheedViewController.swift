@@ -51,6 +51,7 @@ class JaheedViewController: UIViewController {
     @objc func handleScreenShot(){
         canvas.screenshot()
         canvas.showScreenshotEffect()
+        showAlert(title: "Screen shot saved", message: "")
     }
     
     let recordButton: UIButton = {
@@ -62,7 +63,8 @@ class JaheedViewController: UIViewController {
     }()
     
     @objc func handleRecord(){
-       
+        //TODO
+        // Create Record Using ReplayKit
     }
     
     //----------------------------------------
@@ -142,11 +144,6 @@ class JaheedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         canvas.backgroundColor = .white
-        
-        //---------------------
-        //canvas.bounds = CGRect(x: 1, y: 1, width: 1, height: -10)
-        //---------------------
-        
         setupLayout()
     }
     //----------------------------------------
