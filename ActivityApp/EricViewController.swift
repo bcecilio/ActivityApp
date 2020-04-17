@@ -44,12 +44,12 @@ class EricViewController: UIViewController {
   @IBAction func submitButtonPressed(_ sender: UIButton) {
     let newObject = CoreDataManager.shared.createMediaObject(photographerImage, secondImage: userImage, title: "Strike A Pose, Twice")
     print("object created of type \(newObject.title ?? "no title")")
-    guard let data2 = newObject.image,
-    let data = newObject.video else {
-        return
-    }
-    userImageView.image = UIImage(data: data2)
-    photographerImageView.image = UIImage(data: data)
+//    guard let data2 = newObject.image,
+//    let data = newObject.video else {
+//        return
+//    }
+//    userImageView.image = UIImage(data: data2)
+//    photographerImageView.image = UIImage(data: data)
     
   }
 }

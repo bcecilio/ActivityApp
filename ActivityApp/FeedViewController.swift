@@ -10,21 +10,52 @@ import UIKit
 
 class FeedViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+  @IBOutlet weak var tableView: UITableView!
+  
+  private var activities = [ActivityModel]() {
+    didSet {
+      tableView.reloadData()
     }
+  }
+  
+  override func viewDidLoad() {
+        super.viewDidLoad()
+    fetchActivities()
+    tableViewSetup()
+  }
+    
+  private func tableViewSetup() {
+    tableView.delegate = self
+    tableView.dataSource = self
+  }
+  private func fetchActivities() {
+    activities = CoreDataManager.shared.fetchMediaObjects()
+  }
+
+  
     
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension FeedViewController: UITableViewDataSource {
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return activities.count
+  }
+  
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    guard let cell = tableView.dequeueReusableCell(withIdentifier: "activityCell", for: indexPath) as? ActivityCell else {
+      fatalError("unable to downcast to ActivityCell")
     }
-    */
+    let activity = activities[indexPath.row]
+    cell.configureCell(activity: activity)
+    cell.backgroundColor = .systemTeal
+    return cell
+  }
+    
+}
 
+extension FeedViewController: UITableViewDelegate {
+  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    return 160
+  }
 }
