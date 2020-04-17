@@ -14,6 +14,7 @@
 		2EF8665424485AED00C3B1BE /* UIController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF8665324485AED00C3B1BE /* UIController+Navigation.swift */; };
 		2EF866612448C9CA00C3B1BE /* ActivityModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF8665F2448C9CA00C3B1BE /* ActivityModel+CoreDataClass.swift */; };
 		2EF866622448C9CA00C3B1BE /* ActivityModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF866602448C9CA00C3B1BE /* ActivityModel+CoreDataProperties.swift */; };
+		302B0085244970210027E946 /* ShowAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302B0084244970210027E946 /* ShowAlert.swift */; };
 		308EDA0624490ED000C55650 /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308EDA0524490ED000C55650 /* Canvas.swift */; };
 		308EDA0824490F5500C55650 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308EDA0724490F5500C55650 /* Line.swift */; };
 		308EDA0A24490F9C00C55650 /* Jaheed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 308EDA0924490F9C00C55650 /* Jaheed.storyboard */; };
@@ -55,6 +56,7 @@
 		2EF8665324485AED00C3B1BE /* UIController+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIController+Navigation.swift"; sourceTree = "<group>"; };
 		2EF8665F2448C9CA00C3B1BE /* ActivityModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ActivityModel+CoreDataClass.swift"; path = "ActivityAppTests/ActivityModel+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		2EF866602448C9CA00C3B1BE /* ActivityModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ActivityModel+CoreDataProperties.swift"; path = "ActivityAppTests/ActivityModel+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		302B0084244970210027E946 /* ShowAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAlert.swift; sourceTree = "<group>"; };
 		308EDA0524490ED000C55650 /* Canvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Canvas.swift; sourceTree = "<group>"; };
 		308EDA0724490F5500C55650 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		308EDA0924490F9C00C55650 /* Jaheed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Jaheed.storyboard; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				B71C66CB24451D730041AEF4 /* JaheedViewController.swift */,
 				308EDA0524490ED000C55650 /* Canvas.swift */,
 				308EDA0724490F5500C55650 /* Line.swift */,
+				302B0084244970210027E946 /* ShowAlert.swift */,
 				308EDA0924490F9C00C55650 /* Jaheed.storyboard */,
 			);
 			name = Jaheed;
@@ -433,6 +436,7 @@
 				B71C66A5244506DA0041AEF4 /* SceneDelegate.swift in Sources */,
 				2EF866622448C9CA00C3B1BE /* ActivityModel+CoreDataProperties.swift in Sources */,
 				B71C66CE24451D7A0041AEF4 /* BrendonViewController.swift in Sources */,
+				302B0085244970210027E946 /* ShowAlert.swift in Sources */,
 				2EF8664E24484B0200C3B1BE /* Data+ConvertToUrl.swift in Sources */,
 				B71C66C824451D620041AEF4 /* TanyaViewController.swift in Sources */,
 				308EDA0824490F5500C55650 /* Line.swift in Sources */,
